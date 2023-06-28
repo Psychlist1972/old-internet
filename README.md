@@ -42,8 +42,6 @@ Here are some of the files I think are worth looking at, and which contain, at m
 | public/smiles.txt | The unofficial smilie dictionary (for those used to emojis) |
 | public/mudlisting.txt public/mudlist.txt | list of MUDs (Multi-User Dungeons -- multi-player text adventures) |
 | public/grail.pyt | Yes, of course I had the entire script of Monty Python and the Holy Grail in there |
-|
-
 
 ## The tape
 
