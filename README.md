@@ -49,11 +49,11 @@ This is the original tape
 
 ![9 Track VMS Backup Tape](tape.jpg)
 
-And here is the source I compiled to be able to read it. Compiled and ran on WSL on Windows 11.
+Here is the source I compiled to be able to read it. Compiled and ran on WSL on Windows 11.
 
 [VMSBackup source](https://github.com/kkaempf/vmsbackup)
 
-And I'll finish with my .sig from back then, as one should
+And I'll finish with my .sig from back then, as one should. Nemesis was a MUD I was developing at the time.
 
 ```
 .---------.---------------------------------------------------------------.
