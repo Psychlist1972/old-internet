@@ -14,17 +14,20 @@ The files are from a VAX/VMS cluster from the early 90s. Some of the file types 
 
 | File | What |
 | ---------------- | -------------- |
-| .COM | A VMS Command script. Think of it like a batch file or shell script |
+| .com | A VMS Command script. Think of it like a batch file or shell script |
 | .jok | Joke file. Warning: it was 1990/1991. |
 | .sho | Usually involved some VT Terminal animated ASCII art |
 | .pas | Pascal source files (computer science students started with Pascal) |
 | .pyt | Monty Python episode or movie script |
-| .poem | Extra cringe-worth poems from 18/19yo me. Don't judge. |
+| .poem | Extra cringe-worth poems from 18/19yo me. Don't judge. Please. |
+
+A special type of .com file was LOGIN.COM. This ran whenever you logged in. SUBLOGIN.COM would run whenever you moved to a subdirectory. Many of the VMS commands were cumbersome (like "SET DEFAULT" instead of "cd") so it was common to alias those in these .COM files.
 
 In addition to the actual CS assignments, there were also several side projects I had going on in college
 
 * The public folder for people to contribute things to
 * A personals system friends posted to. I didn't remember this until seeing the files
+* A simple reminders/calendar program that worked off a text file (remember, no smart phones back then)
 * A few games I was working on, but never finished. Some are from scratch, others are adaptations of existing source. Time Riffte, Nemesis, etc.
 * Some really stupid and somewhat offensive random sentence generators
 * Things that I used to put obnoxious phrases into the VMS process list
@@ -39,9 +42,11 @@ Here are some of the files I think are worth looking at, and which contain, at m
 
 | File | What |
 | ---------------- | -------------- |
-| public/smiles.txt | The unofficial smilie dictionary (for those used to emojis) |
-| public/mudlisting.txt public/mudlist.txt | list of MUDs (Multi-User Dungeons -- multi-player text adventures) |
-| public/grail.pyt | Yes, of course I had the entire script of Monty Python and the Holy Grail in there |
+| [public/smiles.txt](https://github.com/Psychlist1972/old-internet/blob/main/brownp/public/smiles.txt) | The unofficial smilie dictionary (for those used to emojis) |
+| [public/mudlisting.txt](https://github.com/Psychlist1972/old-internet/blob/main/brownp/public/mudlisting.txt) [public/mudlist.txt](https://github.com/Psychlist1972/old-internet/blob/main/brownp/public/mudlist.txt) | list of MUDs (Multi-User Dungeons -- multi-player text adventures) |
+| [public/grail.pyt](https://github.com/Psychlist1972/old-internet/blob/main/brownp/public/grail.pyt) | Not a .py Python file, but yes, of course I had the entire script of Monty Python and the Holy Grail in there |
+
+My CS professor was Jesse Heines (HEINESJ) so you'll see his name in some things -- typically assignments.
 
 ## The tape
 
