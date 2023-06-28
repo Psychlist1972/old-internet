@@ -1,0 +1,47 @@
+Ok, I am really sorry to keep bothering you with this nonsense.  But
+here's my theory:
+I have been getting mail in the same style from LADDD and AGARWALR.
+I believe that one is a hacked account of the other.  LADDD seems like
+the logical hacker.
+
+I am very sorry to bother you with this stuff, but some people cannot
+take a hint.
+
+					Pete
+
+PS If none of the above interests you, this might ( so much for the
+no multiple processes rule):
+
+Pardon my french, but this kid is a real pain in the a*s.
+
+(excerpt of a joblog file)
+Joblog> su agar
+      VAX/VMS User Processes at 16-DEC-1991 01:53:06.22
+    Total number of users = 1,  number of processes = 24
+
+ Username   Node   Process Name       PID     Terminal
+ AGARWALR   ASPEN  AGARWALR_1       216117A4  (subprocess of 216113A2)
+ AGARWALR   ASPEN  AGARWALR_2       216118A6  (subprocess of 216113A2)
+ AGARWALR   ASPEN  AGARWALR_3       216105B1  (subprocess of 216108AA)
+ AGARWALR   ASPEN  AGARWALR_4       216113B2  (subprocess of 216108AA)
+ AGARWALR   ASPEN  AGARWALR_5       2160FAB5  (subprocess of 2160FEA7)
+ AGARWALR   ASPEN  AGARWALR_6       216114B6  (subprocess of 2160FEA7)
+ AGARWALR   ASPEN  AGARWALR_7       216129B7  (subprocess of 216105A9)
+ AGARWALR   ASPEN  AGARWALR_8       216127B8  (subprocess of 216105A9)
+ AGARWALR   ASPEN  death to you-!!  216113A2  RTA2:    (WILLOW::AGARWALR)
+ AGARWALR   ASPEN  die -NOW-!!      2160FEA7  RTA3:    (ASPEN::AGARWALR)
+ AGARWALR   ASPEN  die you fiend!!  216105A9  RTA4:    (WILLOW::AGARWALR)
+ AGARWALR   ASPEN  you are dead!!   216108AA  RTA5:    (WILLOW::AGARWALR)
+ AGARWALR  WILLOW  AGARWALR_1       22001120  (subprocess of 2200110B)
+ AGARWALR  WILLOW  AGARWALR_2       22001121  (subprocess of 2200110B)
+ AGARWALR  WILLOW  AGARWALR_3       22001230  (subprocess of 22001125)
+ AGARWALR  WILLOW  AGARWALR_4       22000E38  (subprocess of 22001126)
+ AGARWALR  WILLOW  AGARWALR_5       22001236  (subprocess of 22001125)
+ AGARWALR  WILLOW  AGARWALR_6       22001239  (subprocess of 22001126)
+ AGARWALR  WILLOW  AGARWALR_7       22001040  (subprocess of 22000F27)
+ AGARWALR  WILLOW  AGARWALR_8       22001241  (subprocess of 22000F27)
+ AGARWALR  WILLOW  death to you-!!  2200110B  LTA565:  (X0082F5/PORT_6)
+ AGARWALR  WILLOW  die -NOW-!!      22001125  LTA571:  (X0082F5/PORT_6)
+ AGARWALR  WILLOW  die you fiend!!  22000F27  LTA573:  (X0082F5/PORT_6)
+ AGARWALR  WILLOW  you are dead!!   22001126  LTA572:  (X0082F5/PORT_6)
+Joblog> 

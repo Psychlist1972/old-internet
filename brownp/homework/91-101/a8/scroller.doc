@@ -1,0 +1,88 @@
+
+Peter M Brown ULowell 1991   [ 5-NOV-1991 ]
+
+o  Pathname :
+
+	$ run science$disk:[brownp.heinesj]scroller
+
+o  Authors :
+
+	Pas_utils.pas	- Peter M Brown UMass Lowell 1991
+	Windows.pas	- Peter M Brown UMass Lowell 1991
+	Menus.pas	- Peter M Brown UMass Lowell 1991
+	Vt100.pas	- Jesse M Heines UMass Lowell 1990-1991
+	Utilities.pas	- Jesse M Heines UMass Lowell 1990-1991
+
+
+o  Program Purpose :
+
+	To show the practical application of concepts known to enhance
+	the ergonomics of a program.
+
+
+o  How to use Scroller :
+
+	When in doubt, look at the "valid keys" bar at the right of the 
+	display.  It contains the valid keys a user may press at any
+	given time.
+
+	If you press an invalid key and you haven't set the AUTO_HELP to
+	OFF, then a help window will pop up.  If AUTO_HELP is set to OFF,
+	then a tone will sound indicating an invalid keypress.
+
+
+	o  To scroll through text :
+
+		Use the up and down arrow keys to scroll line by line.  Use
+		D and U for page down and page up respectively.
+
+		If you wish to see this file during runtime, simply change
+		teh current path to SCIENCE$DISK:[BROWNP.HEINESJ] and the
+		current file to SCROLLER.DOC.
+
+
+	o  To access the pulldown menus :
+
+		Use the "hot keys" (H F E O) or Press "t" for TOP, or use
+		the standard way of changing modes; hit ESCape twice.
+
+		If all else fails, hit escape twice.
+
+
+	o  To select a menu option :
+		
+		Hit return when the desired option has been highlighted.
+
+		Most options will produce a window on the screen.  Options
+		that toggle settings, and have no need of a dialog box, will
+		not produce a window of any kind.
+
+		Note: Options preceded by the "NOT" (~) or "tilde" are not 
+		      functional options.  Perhaps they will be at a later date.
+
+
+o  Documented Bugs :
+
+	1.  There is a bug with either WINWRITEAT, WINBOX or WINRESTORE
+	    which makes the screen refresh oddly (shifted to the right one
+	    character) under certain conditions.
+
+
+	2.  Not a bug, but an ineffeciency.  When the clock is toggled OFF,
+	    the program will still go through the trouble of refreshing the
+	    area where the clock was with a blank string.
+
+	3.  Not a bug, but an ineffeciency.  My dialogue boxes that prompt
+	    for a string get input character by character.  You cannot 
+	    delete a previous character or in any way edit the string.
+
+	    BUT, folks, if memory served me, assignment 9 is linked lists
+	    and that is teh way of fixing this problem.
+
+	    The only reason I do it this way now is so no one writes a 
+	    string so long it oversteps the boundries of the popup window.
+
+
+* Remember, it's not a bug...it's an undocumented feature !
+
+					Pete Brown

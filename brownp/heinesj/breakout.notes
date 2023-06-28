@@ -1,0 +1,84 @@
+-----------------		-------------		----------
+Notes on Breakout		Peter M Brown		Oct 1 1991
+-----------------		-------------		----------
+
+READ before playing!
+
+$ RUN science$disk:[brownp.heinesj]breakout
+
+Features :
+
+	Pong with a twist -
+
+	The game is esentially Pong, with a few added features.
+
+
+	Demo Game -
+
+	Press D to get a 500 step demo played by the computer.
+	Press ESC twice to get a MAXINT - 1 number of steps demo game.
+	The latter is used by me for debugging, and doesn't appear on 
+	the menu.
+	There is no way to exit from the demo.  That would slow things
+	down too much.
+
+
+	Obsticle -
+
+	(a second paddle) that moves from left to right on the 
+	screen.  This obsticle deflects the ball.
+
+
+	Introduction -
+
+	A short 50 step demonstration followed by the credits and a help
+	screen.
+
+	
+	Help Bar -
+
+	The bar at the top of the screen.  Called by pressing H.
+	
+
+	Pause feature -
+
+	Press P to pause and any key to resume the game.
+
+
+Problems :
+
+	Documented bug (1)
+
+	When the ball hits the corners, it "freaks out" and wipes out the
+	wall that it is near.  I am sure this is because of 
+	ball_bounce_direction, but I cannot find it.
+
+
+	Documented bug (2)
+
+	Bizarre ball_bounce_direction returned from collision with the obsticle
+	which moves across the screen.  Often the ball will choose a nonsensical
+	direction in which to travel after hitting the obsticle.
+
+
+	Documented bug (3)
+
+	Sometimes, even in the demo, the ball will scoot past the paddle if
+	the paddle is located in the corner.  Again, this is because of more
+	that one equation being satisfied in ball_bounce_direction and
+	collision_detected.
+
+
+	Documented shortcoming
+
+	Demo runs MUCH to quickly on a workstation.  For the best effect, run
+	on a 400 series VT.
+
+Note quite implemented but looks neat anyway :
+
+	The "wall" of obsticles in the middle of the screen.
+
+
+
+					Pete
+

@@ -1,0 +1,80 @@
+Return-Path: <@willow:hurtta@cs.Helsinki.FI>
+Received: from hydra.Helsinki.FI by willow (MX V2.3) with SMTP; Fri, 27 Sep
+          1991 03:18:52 EDT
+Received: by hydra.Helsinki.FI (4.1/SMI-4.1/36) id AA19730; Fri, 27 Sep 91
+          10:18:23 +0300
+Date: Fri, 27 Sep 91 10:18:23 +0300
+From: hurtta@cs.Helsinki.FI (Kari Hurtta)
+Message-ID: <9109270718.AA19730@hydra.Helsinki.FI>
+To: gmngr4@willow.ulowell.edu
+In-Reply-To: "Nemesis, the ultimate in science fiction role playing"
+
+'s message of Thu, 26 Sep 1991 17:09:29 EDT <0094F3AC.40966660.8113@woods.ulowell.edu>
+Subject: Your version of monster
+
+   Date: Thu, 26 Sep 1991 17:09:29 EDT
+   From: "Nemesis, the ultimate in science fiction role playing"
+	 <gmngr4@willow.ulowell.edu>
+
+
+   Would you be so kind as to mail me the Monster package, or give me the
+   FTP address for an anonymous login?
+
+For anonymous FTP:
+Machine hylka.Helsinki.FI or hylkb.Helsinki.FI
+Directory public_disk:<public.vax.games-etc.monster.sources>
+
+Don't get *.saveset -files - these isn't up of date.
+Get follow files:
+
+CLI.PAS		      Moduli CLI         - liit{nt{ komentotulkkiin
+COMMANDS.PAPER	      MDLn ohjeet
+CONVERT.BATCH	      Monsterin V 1 tietokannan konvertointi
+CUSTOM.PAS            Moduli CUSTOM      - custom -komennon rutiinit
+FIX.BATCH             Tietokanna virheiden korjaus
+DATABASE.PAS	      Moduli DATABASE    - liit{nt{ tietokantaan
+GLOBAL.PAS	      Moduli GLOBAL      - vakioita
+GUTS.PAS	      Moduli GUTS        - liit{nt{ k{ytt|j{rjestelm{{n
+INTERPRETER.PAS	      Moduli INTERPRETER - MDL tulkki
+KEYS.PAS	      Moduli KEYS        - ei k{yt|ss{ oleva versio !
+MAKEFILE.	      Makefile Monsterin k{{nt{miseksi
+MONSTER.INIT	      Monsterin m{{rittelytiedosto - ei k{yt|ss{ oleva versio!
+MON.PAS		      Moduli MON         - p{{ohjelma komennolle MONSTER
+MONSTER.CLD	      Verbin MONSTER -m{{rittely - ei k{yt|ss{ oleva versio!
+MONSTER.HELP	      Monsterin komentojen avustustiedosto
+MONSTER_E.HLP         Monsterin lis{m{{reiden avustustiedosto (HELP formaatti)
+PARSER.PAS	      Moduli PARSER      - sanojen tunnistus rutiineja
+PRIVUSERS.PAS	      Moduli PRIVUSERS   - tiedoston MONSTER.INIT luku
+QUEUE.PAS	      Moduli QUEUE       - ajastin
+MONSTER_WHO.PAS	      Moduli MONSTER_WHO - p{{ohjelma komennolle MONSTER/WHO
+MONSTER_DUMP.PAS      Moduli MONSTER_DUMP - p{{ohjelma komenneolla MONSTER/DUMP
+
+
+MONSTER_DUMP.PAS is for MONSTER/DUMP and MONSTER/BUILD commands. These
+don't work (completely right). These file isn't in posted version.
+MAKEFILE. is broken.
+
+Don't get:
+DIST_10_11_1990.SAVESET Jakelukappale
+FINDER.PAS	      Erillinen apuohjelma
+READ.ME
+INDEX.
+
+In DIST_10_11_1990.SAVESET there is last posted version, but seems
+that there is some errors, what I have fixed, but not posted. Or
+probably in that saveset there is some usefull files (I think
+something as READ.ME or BUILD.COM). In library MONSTER_E.HLP is
+installation instructions. Compile it with command
+
+	LIBRARIAN MONSTER_E/HELP/CREATE MONSTER_E
+
+Then you get help with command
+
+	HELP/LIBRARY=SYS$DISK:<>MONSTER_E Monster Installation
+
+In DIST_10_11_1990.SAVESET is some MDL -codes as example, but
+these same and many other you found from directory:
+
+	public_disk.<public.vax.games-etc.monster.manager.script>
+
+- K E H

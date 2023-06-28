@@ -1,0 +1,38 @@
+-----------------------------------------------------------------------------
+This is the help file for : [BROWNP.PUBLIC]CALENDAR.EXE
+
+How to execute the program :
+	run science$disk:[brownp.public]calendar
+
+
+-----------------------------------------------------------------------------
+How to use the program :
+	You must have a file named CALENDAR.DAT in the directory that you
+	are currently in.  The format of the data file is as follows :
+
+<date in DCL format>
+<[$] message for that date>
+
+Example:
+
+25-DEC-1991
+Christmas	
+1-JAN-1992
+Happy new year
+3-APR-1992
+Big psych test tomorrow.
+
+-----------------------------------------------------------------------------
+Advanced usage :
+	If you choose to head the message with a $ sign, then you can execute
+	DCL commands.
+Example:
+
+25-DEC-1991
+$ type science$disk:[brownp.public]xmas.txt
+3-APR-1992
+$ set def [brownp.homework._notes.psychology]
+
+etc...
+-----------------------------------------------------------------------------
+

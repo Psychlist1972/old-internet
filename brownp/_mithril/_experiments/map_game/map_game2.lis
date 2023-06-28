@@ -1,0 +1,654 @@
+MAP_GAME2                                                       15-Oct-1991 23:28:49    VAX Pascal V4.2-55                 Page    1
+01                              Source Listing                  15-Oct-1991 23:28:42    MAP_GAME2.PAS;50 (1)
+
+-LINE-IDC-PL-SL-
+
+00001      0  0 [INHERIT('comp$dir:utilities',
+00002      0  0 	 'comp$dir:vt100',
+00003      0  0 	 'mod$dir:pas_utils') ]
+00004      0  0 
+00005      0  0 
+00006      0  0 PROGRAM map_game2 (INPUT,OUTPUT) ;
+00007      0  0 
+00008      0  0 CONST
+00009      0  0     map_dir   = 'science$disk:[brownp._mithril._experiments.map_game]' ;
+00010      0  0     level1_file  = 'level1.dat' ;
+00011      0  0     level2_file  = 'level2.dat' ;
+00012      0  0     level3_file  = 'level3.dat' ;
+00013      0  0     level4_file  = 'level4.dat' ;
+00014      0  0 
+00015      0  0     max_x = 80 ;
+00016      0  0     max_y = 40 ;
+00017      0  0 
+00018      0  0 
+00019      0  0 TYPE
+00020      0  0 
+00021      0  0     line      = VARYING [max_x] OF CHAR ;
+00022      0  0 
+00023      0  0     map_array = ARRAY [1..max_y] OF line ;
+00024      0  0 
+00025      0  0 
+00026      0  0     player_record = RECORD 
+00027      0  0 
+00028      0  0 	x_pos : INTEGER ;
+00029      0  0 	y_pos : INTEGER ;
+00030      0  0 	hp    : INTEGER ;
+00031      0  0 	maxhp : INTEGER ;
+00032      0  0 	gold  : INTEGER ;
+00033      0  0 	level : INTEGER ;
+00034      0  0 
+00035      0  0 	inv   : ARRAY [1..30] OF string ;
+00036      0  0 
+00037      0  0     END ; { player_record }
+00038      0  0 
+00039      0  0 
+00040      0  0 VAR
+00041      0  0     quit : BOOLEAN := FALSE ;
+00042      0  0     dead : BOOLEAN := FALSE ;
+00043      0  0     flee : BOOLEAN := FALSE ;
+00044      0  0     c    : key_code ;
+00045      0  0     map	 : map_array ;
+00046      0  0     me	 : player_record ;
+00047      0  0 
+00048      0  0 
+00049      0  0 
+00050      1  0 FUNCTION maze_completed : BOOLEAN ;
+00051      1  0 
+00052      1  1 BEGIN
+00053      1  1     maze_completed := map[me.y_pos,me.x_pos] = '~' ;
+00054      0  0 END ;
+00055      0  0 
+
+MAP_GAME2                                                       15-Oct-1991 23:28:49    VAX Pascal V4.2-55                 Page    2
+01                              Source Listing                  15-Oct-1991 23:28:42    MAP_GAME2.PAS;50 (1)
+
+-LINE-IDC-PL-SL-
+
+00056      0  0 
+00057      1  0 PROCEDURE update_stats ;
+00058      1  0 
+00059      1  1 BEGIN
+00060      1  1     writeat(60,10,'Hit points '+itoa(me.hp)+'/'+itoa(me.maxhp)+'  ', FALSE) ;
+00061      1  1     writeat(60,11,'Wealth     '+itoa(me.gold)+' gd   ', FALSE) ;
+00062      1  1     writeat(60,12,'Maze level '+itoa(me.level)+' ', FALSE) ;
+00063      1  1 
+00064      0  0 END ;
+00065      0  0 
+00066      0  0 
+00067      1  0 PROCEDURE display_map(
+00068      1  0 	    x_pos : INTEGER ;
+00069      1  0 	    y_pos : INTEGER ) ;
+00070      1  0 
+00071      1  0 VAR
+00072      1  0     k : INTEGER ; (* local loop index variable *)
+00073      1  0     x : INTEGER ; (* local loop index variable *)
+00074      1  0 
+00075      1  0 
+00076      1  1 BEGIN
+00077      1  1 
+00078      1  1     writeat(1,10,'Xposition =  ' + itoa(x_pos),FALSE) ;
+00079      1  1     writeat(1,11,'Yposition =  ' + itoa(y_pos),FALSE) ;
+00080      1  1     writeat(1,12,'Room      = "' + map[y_pos,x_pos] + '"',FALSE) ;
+00081      1  1 
+00082   C  1  1 	(* top 4 rows of characters *)
+00083      1  1 
+00084      1  1     FOR x := 1 TO 4 DO
+00085      1  2 	BEGIN
+00086      1  2 	    FOR k := 1 TO 7 DO
+00087      1  2 		writeat(29+k,4+x,map[y_pos-1,x_pos-1],FALSE) ;
+00088      1  2 
+00089      1  2 	    FOR k := 1 TO 7 DO
+00090      1  2 		writeat(36+k,4+x,map[y_pos-1,x_pos],FALSE) ;
+00091      1  2 
+00092      1  2 	    FOR k := 1 TO 7 DO
+00093      1  2 		writeat(43+k,4+x,map[y_pos-1,x_pos+1],FALSE) ;
+00094      1  1 	END ;
+00095      1  1 
+00096      1  1     FOR x := 1 TO 4 DO
+00097      1  2 	BEGIN
+00098      1  2 	    FOR k := 1 TO 7 DO
+00099      1  2 		writeat(29+k,8+x,map[y_pos,x_pos-1],FALSE) ;
+00100      1  2 
+00101      1  2 	    FOR k := 1 TO 7 DO
+00102      1  2 		writeat(36+k,8+x,map[y_pos,x_pos],FALSE) ;
+00103      1  2 
+00104      1  2 	    FOR k := 1 TO 7 DO
+00105      1  2 		writeat(43+k,8+x,map[y_pos,x_pos+1],FALSE) ;
+00106      1  1 	END ;
+00107      1  1     
+00108      1  1     FOR x := 1 TO 4 DO
+00109      1  2 	BEGIN
+00110      1  2 	    FOR k := 1 TO 7 DO
+
+MAP_GAME2                                                       15-Oct-1991 23:28:49    VAX Pascal V4.2-55                 Page    3
+01                              Source Listing                  15-Oct-1991 23:28:42    MAP_GAME2.PAS;50 (1)
+
+-LINE-IDC-PL-SL-
+
+00111      1  2 		writeat(29+k,12+x,map[y_pos+1,x_pos-1],FALSE) ;
+00112      1  2 
+00113      1  2 	    FOR k := 1 TO 7 DO
+00114      1  2 		writeat(36+k,12+x,map[y_pos+1,x_pos],FALSE) ;
+00115      1  2 
+00116      1  2 	    FOR k := 1 TO 7 DO
+00117      1  2 		writeat(43+k,12+x,map[y_pos+1,x_pos+1],FALSE) ;
+00118      1  1 	END ;
+00119      1  1 
+00120      0  0 END ;
+00121      0  0 
+00122      0  0 
+00123      1  0 PROCEDURE do_flee ;
+00124      1  0 
+00125      1  0 VAR
+00126      1  0     y : INTEGER ;
+00127      1  0     x : INTEGER ;
+00128      1  0     k : INTEGER ;
+00129      1  0 
+00130      1  1 BEGIN
+00131      1  1 
+00132      1  1     flee := false ;
+00133      1  1 
+00134      1  1     k := INT(TRUNC(rnd*2)) ;
+00135      1  1 
+00136      1  1     IF k > 1 THEN
+00137      1  2 	REPEAT
+00138      1  2 
+00139      1  2 	    y := INT(TRUNC(rnd*80)) ;
+00140      1  2 	    x := INT(TRUNC(rnd*80)) ;
+00141      1  2 
+00142      1  2 	    IF map[y,x] <> '#' THEN
+00143      1  3 		BEGIN
+00144      1  3 		    flee := true ;
+00145      1  3 		    me.x_pos := x ;
+00146      1  3 		    me.y_pos := y ;
+00147      1  3 		    display_map(me.x_pos,me.y_pos) ; 
+00148      1  2 		END ;
+00149      1  2 	UNTIL (flee) 
+00150      1  1     ELSE
+00151      1  2 	BEGIN
+00152      1  2 	    flee := false ;
+00153      1  2 	    me.hp := me.hp DIV 2 ;
+00154      1  2 	    writeat(1,22,'It POUNDS you as you try to escape!                                   ') ;  
+00155      1  1 	END ;
+00156      0  0 END ;
+00157      0  0 
+00158      0  0 
+00159      0  0 
+00160      1  0 PROCEDURE choose_random_monster(
+00161      1  0 	VAR name : string ;
+00162      1  0 	VAR hp   : INTEGER ) ;
+00163      1  0 
+00164      1  0 VAR
+00165      1  0     k : INTEGER ;
+
+MAP_GAME2                                                       15-Oct-1991 23:28:49    VAX Pascal V4.2-55                 Page    4
+01                              Source Listing                  15-Oct-1991 23:28:42    MAP_GAME2.PAS;50 (1)
+
+-LINE-IDC-PL-SL-
+
+00166      1  0 
+00167      1  1 BEGIN
+00168      1  1     k := (INT(TRUNC(RND*100))) ;
+00169      1  1     
+00170      1  2     CASE k OF
+00171      1  2 	 0..10  : name := 'black cat' ;
+00172      1  2 	11..20  : name := 'giant rat' ;
+00173      1  2 	21..30  : name := 'slimer' ;
+00174      1  2 	31..40  : name := 'puddle o'' ooze' ;
+00175      1  2 	41..50  : name := 'mirror image of yourself' ;
+00176      1  2 	51..60  : name := 'bat' ;
+00177      1  2 	61..70  : name := 'giant bat' ;
+00178      1  2 	71..80  : name := 'really ungly thing' ;
+00179      1  2 	81..90  : name := 'calculus book' ;
+00180      1  2 	91..101 : name := 'physics book' ;
+00181      1  1     END ; { case }
+00182      1  1 
+00183      1  1     hp := (INT(TRUNC(RND*50))) ;
+00184      0  0 END ;
+00185      0  0 
+00186      0  0 
+00187      0  0 
+00188      1  0 FUNCTION find_monster_hit(
+00189      1  0 	    monster_hp : INTEGER ) : string ;
+00190      1  0 
+00191      1  0 VAR
+00192      1  0     k : INTEGER ;
+00193      1  0     str : string ;
+00194      1  0 
+00195      1  1 BEGIN
+00196      1  1     k := INT((TRUNC(RND*monster_hp))) ;
+00197      1  1 
+00198      1  2     CASE k OF
+00199      1  2 	0      : str := ' and misses you.                                          ' ;
+00200      1  2 	1..5   : str := ' and scratches you.                                       ' ;
+00201      1  2 	6..10  : str := ' and hits you pretty hard.                                 ' ;
+00202      1  2 	11..15 : str := ' and hits you so hard you puke!                          ' ;
+00203      1  2 	16..20 : str := ' and gives you a good look at your internal organs.    '   ;
+00204      1  2 	21..25 : str := ' and practically rips a limb off of your body.             ' ;
+00205      1  2 	26..30 : str := ' and smashes your brains to the other side of your head!' ;
+00206      1  2 	31..50 : str := ' and pounds you so hard you are barely alive!            ' ; 
+00207      1  1     END ; { case }
+00208      1  1 
+00209      1  1     me.hp := me.hp - k ;
+00210      1  1 
+00211      1  1     IF me.hp <=0 THEN 
+00212      1  2 	BEGIN
+00213      1  2 	    me.hp := 0 ;
+00214      1  2 	    dead  := TRUE ;
+00215      1  2 	    str   := ' and pounds you into a lifeless blob.  You are dead.                '
+00216      1  1 	END ;
+00217      1  1 
+00218      1  1     find_monster_hit := str ;
+00219      1  1  
+00220      0  0 END ;
+
+MAP_GAME2                                                       15-Oct-1991 23:28:49    VAX Pascal V4.2-55                 Page    5
+01                              Source Listing                  15-Oct-1991 23:28:42    MAP_GAME2.PAS;50 (1)
+
+-LINE-IDC-PL-SL-
+
+00221      0  0 
+00222      0  0 
+00223      0  0 
+00224      1  0 PROCEDURE attack_monster(
+00225      1  0 	VAR monster_hp : INTEGER ) ;
+00226      1  0 
+00227      1  0 VAR
+00228      1  0     k : INTEGER ;
+00229      1  0     str : string ;
+00230      1  0 
+00231      1  1 BEGIN
+00232      1  1     k := INT((TRUNC(RND*me.hp))) ;
+00233      1  1 
+00234      1  2     CASE k OF
+00235      1  2 	0      : str := ' and you miss.                                        ' ;
+00236      1  2 	1..5   : str := ' and you barely scratch it.                           ' ;
+00237      1  2 	6..10  : str := ' and you hit it pretty hard.                          ' ;
+00238      1  2 	11..15 : str := ' and you hit it so hard it pukes!                     ' ;
+00239      1  2 	16..20 : str := ' and tear at its internal organs with your weapon.    ' ;
+00240      1  2 	21..25 : str := ' and you rip a limb off of its body.                  ' ;
+00241      1  2 	26..30 : str := ' and smash it so hard you put your hand through it!   ' ;
+00242      1  2 	31..50 : str := ' and pound it so hard it is barely living!            ' ; 
+00243      1  1     END ; { case }
+00244      1  1 
+00245      1  1     monster_hp := monster_hp - k ;
+00246      1  1 
+00247      1  1     IF monster_hp <=0 THEN 
+00248      1  1 	str := ' and pound it into a lifeless blob.  It is dead.                 ' ;
+00249      1  1 
+00250   C  1  1 {    gotoxy(1,21) ;
+00251   C  1  1     clreos ;
+00252   C  1  1 }
+00253      1  1     writeat(1,23,'You attack'+str) ;
+00254      1  1 
+00255      0  0 END ;
+00256      0  0 
+00257      0  0 
+00258      1  0 PROCEDURE fight_monster ;
+00259      1  0 
+00260      1  0 VAR
+00261      1  0     monster_name : string ;
+00262      1  0     monster_hp   : INTEGER ;
+00263      1  0     key		 : key_code ;
+00264      1  0 
+00265      1  1 BEGIN
+00266      1  1     choose_random_monster(monster_name,monster_hp) ;
+00267      1  1     writeat(1,21,'As you venture forward you are attacked by a '+monster_name+'!                          ',FALSE) ;       
+00268      1  1     
+00269      1  1     WHILE ((NOT(dead)) AND (monster_hp > 0)) AND (NOT(flee)) DO
+00270      1  2 	BEGIN
+00271      1  2 	    writeat(1,22,'It attacks'+find_monster_hit(monster_hp),FALSE) ;
+00272      1  2 	    update_stats ;
+00273   C  1  2 {	    gotoxy(1,21) ; 
+00274   C  1  2 	    clreos ;  }
+
+MAP_GAME2                                                       15-Oct-1991 23:28:49    VAX Pascal V4.2-55                 Page    6
+01                              Source Listing                  15-Oct-1991 23:28:42    MAP_GAME2.PAS;50 (1)
+
+-LINE-IDC-PL-SL-
+
+00275      1  2     
+00276      1  2 	    IF (NOT(dead)) AND (NOT(flee)) THEN
+00277      1  3 		BEGIN
+00278      1  3 		    gotoxy(1,20) ;
+00279      1  3 		    WRITELN ;
+00280      1  3 		    key := get1char('[(f)ight (r)un]>       ') ; 
+00281      1  3 	    
+00282      1  3 		    IF NOT((key = K_UP_R) OR (key = K_LOW_R)) THEN
+00283      1  3 			attack_monster(monster_hp)
+00284      1  3 		    ELSE
+00285      1  3 			do_flee ;
+00286      1  3 
+00287      1  3 		END
+00288      1  2 	    ELSE
+00289      1  2 		writeat(33,3,' Game over pal ! ',TRUE)
+00290      1  1 	END ;
+00291      1  1 
+00292      1  1 
+00293   C  1  1 	(* give the user some random gold *)
+00294   C  1  1 	(* I used monster_hp to avoid allocating another variable *)
+00295      1  1 
+00296      1  1     IF (not(dead)) THEN
+00297      1  2 	BEGIN
+00298      1  2 	    monster_hp := (INT(TRUNC(rnd*100))) ;   (* reuse of the variable *)
+00299      1  2 	    me.gold    := me.gold + monster_hp ;
+00300      1  1 	END ;
+00301      1  1 
+00302      1  1     update_stats ;
+00303      0  0 END ;
+00304      0  0 
+00305      0  0 
+00306      1  0 PROCEDURE get_treasure ;
+00307      1  0 
+00308      1  1 BEGIN
+00309      1  1     update_stats ;
+00310      0  0 END ;
+00311      0  0 
+00312      0  0 
+00313      1  0 PROCEDURE check_special_room ;
+00314      1  0 
+00315      1  0 VAR
+00316      1  0     k : INTEGER ;
+00317      1  0 
+00318      1  1 BEGIN
+00319      1  1 
+00320      1  1     k := INT(TRUNC(rnd*100)) ;
+00321      1  1 
+00322      1  1     IF k > 90 THEN
+00323      1  1 	map[me.y_pos,me.x_pos] := 'M' ;
+00324      1  1 
+00325      1  2     CASE map[me.y_pos,me.x_pos] OF
+00326      1  2 
+00327      1  2 	'M','m' : fight_monster ;
+00328      1  2 	'T','t' : get_treasure ;
+00329      1  2 
+
+MAP_GAME2                                                       15-Oct-1991 23:28:49    VAX Pascal V4.2-55                 Page    7
+01                              Source Listing                  15-Oct-1991 23:28:42    MAP_GAME2.PAS;50 (1)
+
+-LINE-IDC-PL-SL-
+
+00330      1  1     END ; { case }
+00331      1  1 
+00332      0  0 END ;
+00333      0  0 
+00334      0  0 
+00335      0  0 
+00336      0  0 
+00337      1  0 PROCEDURE set_up_screen ;
+00338      1  0 
+00339      1  1 BEGIN
+00340      1  1     clrscr ;
+00341      1  1     box (29,4,51,17) ;
+00342      1  1     display_map(me.x_pos,me.y_pos) ;
+00343      0  0 END ;
+00344      0  0 
+00345      0  0 
+00346      1  0 PROCEDURE move_north ;
+00347      1  0 
+00348      1  1 BEGIN
+00349      1  1     IF ((me.y_pos - 1) <= 1) OR (map[me.y_pos-1,me.x_pos] = '#') THEN
+00350      1  1 	beep
+00351      1  1     ELSE
+00352      1  2 	BEGIN
+00353      1  2 	    me.y_pos := me.y_pos - 1 ;
+00354      1  2 	    display_map(me.x_pos,me.y_pos) ;
+00355      1  1 	END ;
+00356      0  0 END ;
+00357      0  0 
+00358      0  0 
+00359      0  0 
+00360      1  0 PROCEDURE move_south ;
+00361      1  0 
+00362      1  1 BEGIN
+00363      1  1     IF ((me.y_pos + 1) >= max_y) OR (map[me.y_pos+1,me.x_pos] = '#') THEN
+00364      1  1 	beep
+00365      1  1     ELSE
+00366      1  2 	BEGIN
+00367      1  2 	    me.y_pos := me.y_pos + 1 ;
+00368      1  2 	    display_map(me.x_pos,me.y_pos) ;
+00369      1  1 	END ;
+00370      1  1 
+00371      0  0 END ;
+00372      0  0 
+00373      0  0 
+00374      1  0 PROCEDURE move_east ;
+00375      1  0 
+00376      1  1 BEGIN
+00377      1  1     IF ((me.x_pos + 1) >= max_x) OR (map[me.y_pos,me.x_pos+1] = '#') THEN
+00378      1  1 	beep
+00379      1  1     ELSE
+00380      1  2 	BEGIN
+00381      1  2 	    me.x_pos := me.x_pos + 1 ;
+00382      1  2 	    display_map(me.x_pos,me.y_pos) ;
+00383      1  1 	END ;
+00384      1  1 
+
+MAP_GAME2                                                       15-Oct-1991 23:28:49    VAX Pascal V4.2-55                 Page    8
+01                              Source Listing                  15-Oct-1991 23:28:42    MAP_GAME2.PAS;50 (1)
+
+-LINE-IDC-PL-SL-
+
+00385      0  0 END ;
+00386      0  0 
+00387      0  0 
+00388      1  0 PROCEDURE move_west ;
+00389      1  0 
+00390      1  1 BEGIN
+00391      1  1     IF ((me.x_pos - 1) <= 1) OR (map[me.y_pos,me.x_pos-1] = '#') THEN
+00392      1  1 	beep
+00393      1  1     ELSE
+00394      1  2 	BEGIN
+00395      1  2 	    me.x_pos := me.x_pos - 1 ;
+00396      1  2 	    display_map(me.x_pos,me.y_pos) ;
+00397      1  1 	END ;
+00398      0  0 END ;
+00399      0  0 
+00400      0  0 
+00401      1  0 PROCEDURE save_game ;
+00402      1  1 BEGIN
+00403      0  0 END ;
+00404      0  0 
+00405      0  0 
+00406      1  0 PROCEDURE read_map(
+00407      1  0 	lev : INTEGER) ;
+00408      1  0 
+00409      1  0 VAR
+00410      1  0     root    : string ;
+00411      1  0     fileid  : TEXT ;
+00412      1  0     counter : INTEGER := 1 ;
+00413      1  0     str	    : string ;
+00414      1  0 
+00415      1  1 BEGIN
+00416      1  1     
+00417      1  2     CASE lev OF
+00418      1  2 	1 : root := map_dir + level1_file ;
+00419      1  2 	2 : root := map_dir + level2_file ;
+00420      1  2 	3 : root := map_dir + level3_file ;
+00421      1  2 	4 : root := map_dir + level4_file ;
+00422      1  1     END ; { case }    
+00423      1  1 
+00424      1  1 
+00425      1  1     IF valid_file(root) THEN
+00426      1  2 	BEGIN
+00427      1  2 	    OPEN (fileid, root, HISTORY := OLD) ;
+00428      1  2 	    RESET (fileid) ;
+00429      1  2 
+00430      1  2 	    WHILE ((NOT(EOF(fileid))) AND (counter <= max_y)) DO
+00431      1  3 		BEGIN
+00432      1  3 		    READLN(fileid, str) ;
+00433      1  3 
+00434   C  1  3 			(* parse out comments *)
+00435      1  3 
+00436      1  3 		    standardize_string(str) ;
+00437      1  3 
+00438      1  3 		    IF str <> '' THEN
+00439      1  3 			IF str[1] <> '!' THEN
+
+MAP_GAME2                                                       15-Oct-1991 23:28:49    VAX Pascal V4.2-55                 Page    9
+01                              Source Listing                  15-Oct-1991 23:28:42    MAP_GAME2.PAS;50 (1)
+
+-LINE-IDC-PL-SL-
+
+00440      1  4 			    BEGIN
+00441      1  4 				map[counter] := str ;
+00442      1  4 				counter := counter + 1 ;
+00443      1  3 			    END ;
+00444      1  2 		END ;
+00445      1  2 
+00446      1  2 	    CLOSE (fileid) ;
+00447      1  2 	END 
+00448      1  1     ELSE
+00449      1  1 	WRITELN('Cannot load next level.') ;
+00450      0  0 END ;
+00451      0  0 
+00452      0  0 
+00453      1  0 PROCEDURE do_help ;
+00454      1  0 
+00455      1  1 BEGIN
+00456      1  1     writeat(1,23,'Help!??! Not yet!') ;
+00457      0  0 END ;
+00458      0  0 
+00459      0  0 
+00460      1  0 PROCEDURE initialize_all ;
+00461      1  0 
+00462      1  1 BEGIN
+00463      1  1     me.x_pos := 3 ;
+00464      1  1     me.y_pos := 4 ;
+00465      1  1     me.maxhp := 100 ;
+00466      1  1     me.hp    := 100 ;
+00467      1  1     me.level := 1 ;
+00468      1  1 
+00469      1  1     read_map(me.level) ;	(* set up first level *)
+00470      0  0 END ;
+00471      0  0 
+00472      0  0 
+00473      0  1 BEGIN
+00474      0  1     initialize_all ;
+00475      0  1     set_up_screen ;
+00476      0  1     update_stats ;
+00477      0  1     
+00478      0  2     REPEAT
+00479      0  2 	
+00480      0  2 	gotoxy(1,20) ;
+00481      0  2 	WRITELN ;
+00482      0  2 
+00483      0  2 	IF (maze_completed) THEN
+00484      0  3 	    BEGIN
+00485      0  3 		me.level := me.level + 1 ;
+00486      0  3 		read_map (me.level) ;
+00487      0  3 		beep ;
+00488      0  3 		flash_screen ;
+00489      0  3 		beep ;
+00490      0  3 		gotoxy(1,23) ;
+00491      0  3 		clreos ;
+00492      0  3 		writeat(1,23,'You are transported down one more level...beware...') ;
+00493      0  2 	    END ;
+00494      0  2 
+
+MAP_GAME2                                                       15-Oct-1991 23:28:49    VAX Pascal V4.2-55                 Page   10
+01                              Source Listing                  15-Oct-1991 23:28:42    MAP_GAME2.PAS;50 (1)
+
+-LINE-IDC-PL-SL-
+
+00495      0  2 	c := get1char('[n,s,e,w,h,q] > ') ;
+00496      0  2 
+00497      0  2 	IF me.hp < me.maxhp THEN
+00498      0  2 	    me.hp := me.hp + 1 ;
+00499      0  2 
+00500      0  2 	update_stats ;
+00501      0  2 
+00502      0  2 
+00503      0  2 	gotoxy(1,21) ;
+00504      0  2 	clreos ;
+00505      0  2 
+00506      0  3 	CASE c OF
+00507      0  3 	    K_UP_Q, K_LOW_Q : quit := TRUE ;
+00508      0  3 	    K_UP_N, K_LOW_N : move_north ;
+00509      0  3 	    K_UP_S, K_LOW_S : move_south ;
+00510      0  3 	    K_UP_E, K_LOW_E : move_east ;
+00511      0  3 	    K_UP_W, K_LOW_W : move_west ;
+00512      0  3 	    K_UP_H, K_LOW_H : do_help ;
+00513      0  3 	 
+00514      0  3 	    OTHERWISE
+00515      0  3 		beep ;
+00516      0  3 
+00517      0  2 	END ; { case }	
+00518      0  2 
+00519      0  2 	check_special_room ;
+00520      0  2 
+00521      0  1     UNTIL (quit or dead) ;
+00522      0  1 
+00523      0  1     gotoxy(1,24) ;
+00524      0  1     WRITELN ;
+00525      0  1 
+00526      0  0 END .
+
+MAP_GAME2                                                       15-Oct-1991 23:28:49    VAX Pascal V4.2-55                 Page   11
+01                              Pascal Compilation Statistics   15-Oct-1991 23:28:42    MAP_GAME2.PAS;50 (1)
+
+PSECT SUMMARY
+
+        Name                     Bytes                         Attributes
+
+$CODE                                7399  NOVEC,NOWRT,  RD,  EXE,  SHR,  LCL,  REL,  CON,  PIC,ALIGN(2)
+$LOCAL                              11018  NOVEC,  WRT,  RD,NOEXE,NOSHR,  LCL,  REL,  CON,  PIC,ALIGN(2)
+
+
+ENVIRONMENT STATISTICS
+
+                                                       -------- Symbols --------
+        File                                           Total    Loaded   Percent
+
+GROUP$DISK:[COMPSCI]UTILITIES.PEN;18                      70        20        29
+GROUP$DISK:[COMPSCI]VT100.PEN;18                          60         6        10
+[BROWNP.HOMEWORK.91-101.MODULES]PAS_UTILS.PEN;33         212        45        21
+
+
+COMMAND QUALIFIERS
+
+  PAS/LIST/ANALYZE MAP_GAME2
+
+  /CHECK=(BOUNDS,NOCASE_SELECTORS,DECLARATIONS,NOOVERFLOW,NOPOINTERS,NOSUBRANGE)
+  /DEBUG=(NOSYMBOLS,TRACEBACK)
+  /NODESIGN
+  /SHOW=(DICTIONARY,INCLUDE,NOINLINE,HEADER,SOURCE,STATISTICS,TABLE_OF_CONTENTS)
+  /OPTIMIZE
+  /STANDARD=NONE
+  /TERMINAL=(NOFILE_NAME,NOROUTINE_NAME,NOSTATISTICS)
+  /USAGE=(NOUNUSED,UNINITIALIZED,NOUNCERTAIN)
+  /ANALYSIS_DATA=SCIENCE$DISK:[BROWNP._MITHRIL._EXPERIMENTS.MAP_GAME]MAP_GAME2.ANA;27
+  /NOENVIRONMENT
+  /LIST=SCIENCE$DISK:[BROWNP._MITHRIL._EXPERIMENTS.MAP_GAME]MAP_GAME2.LIS;27
+  /OBJECT=SCIENCE$DISK:[BROWNP._MITHRIL._EXPERIMENTS.MAP_GAME]MAP_GAME2.OBJ;47
+  /NOCROSS_REFERENCE /ERROR_LIMIT=30 /NOG_FLOATING /NOMACHINE_CODE /NOOLD_VERSION /WARNINGS
+
+
+COMPILER INTERNAL TIMING
+
+  Phase                 Faults       CPU Time      Elapsed Time
+  Initialization          294        00:00.3          00:00.9
+  Source Analysis         545        00:01.0          00:03.7
+  Source Listing           11        00:00.3          00:00.6
+  Tree Construction       230        00:00.2          00:00.3
+  Flow Analysis            51        00:00.1          00:00.1
+  Value Propagation        13        00:00.0          00:00.1
+  Profit Analysis          61        00:00.1          00:00.1
+  Context Analysis        311        00:01.0          00:01.5
+  Name Packing              9        00:00.1          00:00.1
+  Code Selection          120        00:00.2          00:00.2
+  Final                    77        00:00.4          00:00.8
+  TOTAL                  1728        00:03.6          00:08.2
+
+
+COMPILATION STATISTICS
+
+  CPU Time:       00:03.6         (8742 Lines/Minute)
+
+MAP_GAME2                                                       15-Oct-1991 23:28:49    VAX Pascal V4.2-55                 Page   12
+01                              Pascal Compilation Statistics   15-Oct-1991 23:28:42    MAP_GAME2.PAS;50 (1)
+
+  Elapsed Time:   00:08.2
+  Page Faults:    1728
+  Pages Used:     1412
+  Compilation Complete

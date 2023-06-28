@@ -1,0 +1,41 @@
+define command cl	"compile/review $ /list/optimize"
+define command w80	"set screen width=80"
+define command w132	"set screen width=132"
+define command h24	"set screen height=24"
+define command h48	"set screen height=48"
+define command three	"set screen window=3"
+define command update	"write"
+define command case	"set search = case_sens"
+define command nocase	"set search = nocase_sens"
+define command hide	"do ""goto char/horizontal"",""goto line/beginning/reverse"", ""enter text """"{ pmb """""", ""goto line/end"",""enter text """" }"""""""
+define command comment	"do ""goto char/horizontal"",""goto line/beginning/reverse"", ""enter text """"(* """""", ""goto line/end"",""enter text """" *)"""""""
+
+define command procedure "do ""enter text """"PROCEDURE ;"""""", ""goto line/beginning/forward"",""enter text """"BEGIN   (* procedure *)"""""", ""goto line/beginning/forward"", ""enter text """"END ;   (* procedure *)"""""""
+define command function  "do ""enter text """"FUNCTION : ;"""""", ""goto line/beginning/forward"",""enter text """"BEGIN   (* procedure *)"""""", ""goto line/beginning/forward"", ""enter text """"END ;   (* procedure *)"""""""
+define command program   "do ""enter text """"PROGRAM name (INPUT,OUTPUT) ;"""""",""goto line/beginning/forward"",""enter text """"BEGIN   (* mainline *)"""""",""goto line/beginning/forward"", ""enter text """"END .   (* mainline *)"""""""
+
+define key pf2	    "do ""search pmb"", ""goto character/horizontally"",  ""goto character/horizontally"""
+define key gold-c   "do ""set select_mark"", ""goto character/horizontally"", ""change case"", ""goto word""
+define key gold-d   "do ""cut/noerase"""
+define key gold-e   "do ""cut/noerase"", ""paste"""
+define key gold-l   "do ""set select_mark"", ""goto word"", ""change case"""
+define key gold-o   "do ""enter text """"(* """""", ""set reverse"",""goto char/hori"", ""goto char/hori"",""goto char/hori"", ""set forward"", ""goto char/vert""" 
+define key gold-p   "do ""enter text """" *)"""""", ""goto line/end"""
+define key gold-t   "do ""erase/to character /reverse"", ""set reverse"", ""goto character/horizontally"", ""unerase character"",  ""set forward"", ""goto character/horizontally"""
+define key gold-u   "do ""set select_mark"", ""goto word"", ""change case"""
+define key gold-q   "set screen window=1"
+define key gold-w   "set screen window=2"
+define key gold-a   "set screen window=3"
+define key gold-s   "set screen window=4"
+
+define key ctrl-h   "do ""hide"""
+define key ctrl-p   "do ""procedure"""
+define key ctrl-f   "do ""function"""
+define key ctrl-d   "do ""exit"""
+define key ctrl-x   "do ""exit"""
+
+set mode menu = graphics
+set right_margin 79
+set tab_increment 4
+set screen balance_windows
+set wrap

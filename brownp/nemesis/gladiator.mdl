@@ -1,0 +1,50 @@
+! GLADIATOR.MDL
+
+- LABEL enter()
+- LABEL leave()
+- LABEL say(if(include(speech,"Fight"),GOSUB fight()),
+	    if(include(speech,"Hello"),GOSUB hello()))
+- LABEL look()
+- LABEL look you()
+- LABEL command(DEFINE lowcase(prog(SET lowcase(strip(command)),
+        if(=(command,"smile"), GOSUB smile(command,lowcase),
+	if(=(command,"fight"), GOSUB fight(command, lowcase),
+        if(=(command,"kill"), GOSUB fight(command, lowcase),
+        if(=(command,"punch"), GOBUS fight(command, lowcase),
+        if(=(command,"status"), GOSUB status(command,lowcase),
+	if(=(command,"restart"), GOSUB restart(command,lowcase),
+        if(=(command,"attack"), GOSUB fight(command, lowcase),
+	pprint("You can't ",command," receptionist.")
+))))))))))
+	
+- LABEL Action(
+	pprint raw("You ",p1," ",p2),
+	oprint raw(print null(player name)," ",p1,"s ",p2)
+	)
+
+- LABEL No Action(
+	pprint raw("You can't ",p1," ",p2),
+	oprint(player name," can't ",p1," ",p2)
+	)
+
+- LABEL Score(set experience(plus(experience(player name),p1)))
+
+- LABEL smile(
+        GOSUB Action(
+	"smile","at the Gladiator."))
+
+- LABEL status(pprint("Gladiator's status: ",get state()))
+
+- LABEL restart(if(GOSUB Manager(),GOSUB Restart(),
+	GOSUB No Action("restart","Gladiator.")))
+
+- LABEL Restart(GOSUB Action("restart","gladiator."),
+	set state(""),
+	FOR i("-1-, -2-, -3-, -4-",GOSUB Get(i)),
+	move("colleseum floor"))
+
+- LABEL fight (pprint("Gladiator: Duh.  Ok, you asked for it!)),
+	if(SET room(GOSUB Locate()),
+	  
+-LABEL hello(print("Gladiator: Wanna fight, mulebreath?"))
+

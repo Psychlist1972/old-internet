@@ -1,0 +1,26 @@
+1 1801 1500 0 0 801 900 1000 0 false 0 a statue 
+2 1802 1502 0 0 806 0 10 0 true 2 a torch
+3 1803 1503 0 0 801 0 1000 0 false 0 a monolith
+4 1804 1504 0 0 807 0 10 1 false 5 a box
+5 1805 1505 19 19 801 0 25 0 true 5 a bird
+6 1806 1506 0 0 801 902 3000 0 false 0 a bus
+7 1807 1507 0 0 801 905 3000 0 false 0 a house
+8 1808 1508 0 0 801 908 90 0 false 0 a lady
+9 1809 1509 0 0 801 910 150 0 false 0 a man 
+10 1810 1510 0 0 801 909 150 0 false 0 a priest
+11 1811 1511 0 0 801 0 2 0 true 0 a rock
+12 1812 1512 0 0 801 902 110 0 false 0 a sign
+13 1813 1513 0 0 801 911 110 0 false 0 some writing
+14 1814 1514 0 0 801 0 1 0 true 5 a schedule
+15 1815 1515 0 0 801 0 5 2 true 0 a book
+16 1816 1516 0 0 801 0 1 2 true 0 a brochure
+17 1817 1517 0 0 801 912 130 0 false 0 empty seat
+18 1818 1518 0 0 801 0 1 0 true 0 a coin 
+19 1819 1519 0 0 801 0 10 1 false 0 cage 
+20 1820 1520 0 0 801 0 3 1 false 0 wallet
+21 1821 1521 0 0 801 913 102 0 true 0 hamster
+22 1822 1522 0 0 801 914 102 0 false 0 priest's corpse <=== not done yet
+23 1823 1523 0 0 801 915 102 0 false 0 cracked altar   <=== not done yet
+24 1824 1524 0 0 801 916 102 0 false 0 various corpses <=== not done yet
+25 1825 1525 0 0 801 916 102 0 false 0 tapestry        <=== not done yet
+26 1826 1526 0 0 801 917 102 0 true 0 some crap 

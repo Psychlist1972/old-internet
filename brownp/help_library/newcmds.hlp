@@ -1,0 +1,381 @@
+1 _LOGIN
+ _LOGIN ["clock"]
+	
+  	_LOGIN.COM, a useful file created to make life easier for students
+  	new to the VAX/VMS operating system.
+
+	Specifing the "clock" parameter after calling the _LOGIN.COM will
+	enable JCLOCK (see Defined_Commands CLOCK).
+
+	@ science$disk:[brownp.public]_login.com "clock"
+
+2 Terminal_Changes
+
+	_LOGIN.COM does the following to the terminal :
+
+	SET TERMINAL/INSERT    	= Puts the CLI in insert mode
+	SET TERMINAL/DEV=VT100  = Terminal ID = VT100
+	SET TERMINAL/ECHO	= Turns the local Echo ON
+
+2 Defined_Commands
+
+	These commands are defined once you install _LOGIN.COM
+
+3 ALARM
+ ALARM <alarm time> <FLASH BEEP or BOTH>
+
+	Spawns a process which creates an alarm clock.  Alarm sets off
+	either a quick screen flash, a short beep or both depending
+	upon the specified parameter.
+
+	
+3 ALOG
+ ALOG [no parameters]
+
+	Equivalent to the command string @SYS$LOGIN:LOGIN.COM
+
+3 ASPEN
+ ASPEN [no parameters]
+
+	Set host to Node ASPEN from the WOODS cluster.
+
+3 BONER
+ BONER [no parameters]
+
+	A sick program that produces a demented paragraph based upon
+	random selections of phrases, nouns etc...
+
+3 BRO
+ BRO [no parameters]
+
+	Equivalent to the command string SET TERM/NOBROADCAST
+
+
+3 CD
+ CD [<..> <directory_name>]
+
+	CD		=  set def sys$login
+
+	CD ..		= set def [-]
+
+	CS <dir_name>	= set def [.dir_name]
+	
+
+3 CLOCK
+ CLOCK [no parameters]
+
+	Spawns a process that will display a clock at the top right
+	of the terminal screen.
+
+	Stop the clock by killing the process.
+
+
+3 CONVERT
+ CONVERT [no parameters]
+
+	Convert a file to a series of Pascal WRITELN statements or
+	VMS write sys$output statements.
+
+	Produces an executable image file.
+
+3 CS
+ CS [no parameters]
+
+	Connect to the University's main Computer Science machine
+	from the WOODS cluster.
+
+3 DRAW
+ DRAW [no parameters]
+
+	Invoke a VAX drawing utility.  Useful for creating graphic
+	text files.
+
+3 ECHOFF
+ ECHOFF [no parameters]
+
+	Turn the local echo off on your terminal.
+
+	See also ECHON.
+
+3 ECHON
+ ECHON [no parameters]
+
+	Turn the local echo on on your terminal.
+
+	See also ECHOFF
+
+3 ELOG
+ ELOG [no parameters]
+
+	Edit your LOGIN.COM file.  Equivalent to the command :
+
+		$ EDIT SYS$LOGIN:LOGIN.COM
+
+3 Further_help
+ Further_help
+
+	Send EMail to WOODS::BROWNP
+
+
+3 GROFF
+ GROFF [no parameters]
+
+	Turn graphics mode off.
+
+3 GRON
+ GRON [no parameters]
+
+	Turn graphics mode on.
+
+3 HAWK
+ HAWK [no parameters]
+
+	Connect to remote node HAWK from the WOODS cluster.
+
+3 JITTER
+ JITTER [no parameters]
+
+	Really annoying screen-shaking com file.
+
+3 LS
+ LS [<filename or wildcard>]
+
+	Equivalent to command string DIRECTORY/SIZE/PROTECTION/OWNER
+
+3 MAIL
+ MAIL [normal set of parameters]
+
+	Allows you to use EDT as the standard mail editor.
+
+3 MORE
+ MORE <filename or wildcard>
+
+	Equivalent to the command string TYPE/PAGE
+
+
+3 MOVE
+ MOVE <filename>
+
+	Program which moves the specified file to a specified directory.
+
+3 NEMESIS
+ NEMESIS
+	Enter the Nemesis Universe.
+
+	A multi-user science fiction game designed by Peter M Brown,
+	The Psychlist.
+
+	Send EMail to BROWNP for more information.
+
+4 /DEBUG
+ /DEBUG
+	Turn debugging on.
+
+4 /START
+ /START
+	Not needed.  Is equivalent to just typing NEMESIS.
+
+4 /WHO
+ /WHO
+	List who is currently in the Nemesis Universe.
+	Incompatable with any other qualifiers.
+
+4 Contact_address
+
+	WOODS::BROWNP
+
+		or
+
+	brownp@woods.ulowell.edu
+
+3 NBR
+ NBR [no parameters]
+
+	Equivalent to the command string SET TERM/NOBROADCAST
+
+3 OLEARY
+ OLEARY <filename>
+
+	Equivalent to the command string PRINT/QUEUE = OLEARY <filename>
+
+3 OS101
+ OS101 <filename>
+
+	Equivalent to the command string PRINT/QUEUE = OS101 <filename>
+
+
+3 OS101A
+ OS101A <filename>
+
+	Equivalent to the command string PRINT/QUEUE = OS101A <filename>
+
+3 OS101B
+ OS101B <filename>
+
+	Equivalent to the command string PRINT/QUEUE = OS101B <filename>
+
+3 PAGE
+ PAGE <filename or wildcard>
+
+	Equivalent to the command string TYPE/PAGE
+
+3 PAUSE
+ PAUSE [no parameters]
+
+	Lock up your terminal so no one may use it.  
+
+4 Password
+ 
+	Pause will prompt you for a password.  It can be of any length and 
+	IS case-sensitive.
+
+3 PDIR
+ PDIR [<filename or wildcard>]
+	Directory listing by page.
+
+4 Filename
+
+	Specifying a filename or wildcard will list all files
+	with that filename or wildcard. 
+
+4 Examples
+
+	PDIR        - List all files in the directory.
+
+	PDIR *.TXT  - List all files with the .TXT extension.
+	
+	PDIR LOG*.* - List all files beginning with LOG.
+
+3 JOKES
+ JOKES [no parameters]
+
+	Access to Brian Keener's public directory of jokes.
+	If there are any problems, send mail to :
+	
+	keenerb@woods.ulowell.edu
+
+3 PERSONAL
+ PERSONAL [no parameters]
+ 
+	Access the VAX/VMS Electronic personals page.  The
+	E_Personals server was written by Peter M Brown, and based
+	upon a concept by George Cercone.
+
+3 PUBLIC
+ PUBLIC [no parameters]
+
+	Put you into my public directory file handling program.
+
+3 RE1
+ RE1 [<filename>]
+
+	Purge and rename <filename> to version 1.  If no filename is
+	specified then all files will be purged.
+
+3 SEND
+ SEND <username> <number of copies> <filename>
+
+	Mails <number of copies> of <filename> to <username>.
+
+	Very annoying program, use at your own discretion.  I am not
+	responsible for any attacks by the offended user.
+
+3 SU
+ SU [<username>]
+
+	Show users/full.  If a user is specified, then it 
+	all process with that username will be displayed.
+
+
+3 TIME
+ TIME [no parameters]
+
+	Equivalent to the command string SHOW TIME.
+
+
+3 TRASH
+ TRASH <filename>
+
+	Deletes all versions of <filename>, whether protection is set
+	to (o:d) or not.  Also unlocks the file, and displays the 
+	directory afterwards.
+
+3 WHO
+ WHO [<username>]
+
+	Show users/full by page.  If a user is specified, then it 
+	all process with that username will be displayed.
+
+
+3 WILLOW
+ WILLOW [no parameters]
+
+	Set host to node WILLOW on the WOODS cluster.
+
+
+3 Written_by
+ Written_by
+
+	This help file, _LOGIN.COM and PAS_UTILS all written by 
+	Peter M Brown, University of Mass - Lowell 1991.
+
+	NEMESIS and E_PERSONALS written By Peter M Brown,
+	University of Mass - Lowell 1991-1992
+
+	pbrown@cs.ulowell.edu
+	snappa@wombat.gnu.ai.mit.edu
+	gmngr4@woods.ulowell.edu
+	brownp@woods.ulowell.edu   "The Psychlist"
+
+1 Pascal_routines
+
+2 Constants
+
+	Key_Codes of the form K_UP_x and K_LOW_x are defined in this
+	module.
+
+	Also, the constants CTRL_A through CTRL_Z are defined.
+
+3 Examples
+
+	K_UP_Y  is equivalent to the number returned by ORD('Y')
+	K_LOW_P is equivalent to the number returned by ORD('y') 
+
+
+2 File_handling
+
+3 Valid_file
+
+2 Misc
+
+3 ReadInt
+
+2 Screen_manipulation
+
+3 Drop_String
+
+3 Echo
+
+3 Flash_Screen
+
+3 GotoVirtualXY
+
+3 ShadedBox
+
+3 Slide_String
+
+3 UnBox
+
+3 VertLn
+
+3 WriteAt
+
+3 BlankLn
+
+2 WHAT_TO_INHERIT
+
+	Use the INHERIT statement below to obtain all of the
+	Procedures and Functions discussed in this section.
+	[INHERIT('SCIENCE$DISK:[BROWNP.PUBLIC]PAS_UTILS')]
+
+	

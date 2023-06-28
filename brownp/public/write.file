@@ -1,0 +1,44 @@
+!
+! This file will keep an accurate account of how many times a day the
+! utilities in my public directory are used
+!
+!
+$  uic   = f$user()
+$  time  = f$time()
+$  pname = f$process()
+$  uic   = f$edit(uic,"trim,upcase")
+$
+$  if uic .eqs. "[BROWNP]" then goto LEAVE   
+$  if uic .eqs. "[GMNGR4]" then goto LEAVE
+$
+$  if uic .eqs. "[467,4054]" then uic = "-[CASEYSU]"
+$  if uic .eqs. "[407,6061]" then uic = "-[FUNAIOLEM]"
+$  if uic .eqs. "[PARTTIME,SABOTKAP]" then uic = "-[SABOTKAP]"
+$  if uic .eqs. "[PARTTIME,LOMBARDIF]" then uic = "-[LOMBARDIF]"
+$  if uic .eqs. "[PARTTIME,ROSARION]" then uic = "-[ROSARION]"
+$  if uic .eqs. "[30001,1373]" then uic = "-[JARVISJ]"
+$
+$  uic = uic + "                           "
+$  pname = pname + "                                "
+$  uic   = f$extract(0,15,uic)
+$  pname = f$extract(0,22,pname)
+$
+$ 
+$  dir :== dir / exclude = (*.PMB)
+$
+$  if p1 .EQS. "" then p1 = "n/a"
+$
+$!  show symbol uic
+$
+!
+! No need to do this anymore.
+! The list grows so fast , it eats up WHITEDA's account
+! at an unbelievable rate.
+!
+$!  open/append users music$disk:[whiteda.po_box]users.dat
+$!  write users uic , " ! ",pname,"   " , time, "  -  ",p1 
+$!  close users
+$
+$LEAVE:
+$
+$  exit

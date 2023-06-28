@@ -1,0 +1,363 @@
+From:	WOODS::SCHLESINJ    "From my screen to yours!" 28-NOV-1990 11:20:57.45
+To:	BROWNP
+CC:	
+Subj:	internet mud lists
+
+
+From:	GULL::"wisdom@ai.mit.edu" 29-OCT-1990 22:00:01.27
+To:	purwinc@willow.ulowell.edu 
+CC:	
+Subj:	Internet MUD Games Listing 
+
++=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=+
+| Jay Schlesinger      | Email@                      | What was going through |
+| Dept. of EE          | schlesinj@woods.ulowell.edu | Ben Franklin's mind    |
+| University of Lowell | schlesj@spruce.ulowell .edu | When he decided to     |
+| Lowell, MA    01854  |                             | discover electricity?  |
++=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=+
+
+AFTER THOUGHT: 
+		Q:  What is life without non-linear circuit elements?
+		A:  A hell of a lot easier!
+
+
+******************************************************************************
+*                     MUD-LIST:  MUD Servers Mailing-List                    *
+*                                                                            *
+*      A mailing-list to present a current list of Internet-accessible       *
+*   multiplayer games and how to obtain sources and accessories for these.   *
+*                                                                            *
+*       EFFECTIVE DATE: 29oct90                          UPDATE NO: 30       *
+*                                                                            *
+******************************************************************************
+*                                                                            *
+*       This list is currently released for biweekly distribution, due to    *
+*    the fact that I'm not getting enough new data each week to warrant      *
+*    updating each week.  Also, this list will be released every other       *
+*    Monday until further notice.					     *
+*								             *
+******************************************************************************
+*        							             *
+*       The updating of this list comprises of research that I constantly    *
+*    perform to search out new games... tips that I get from list            *
+*    subscribers like you, and items read from the Usenet news group         *
+*    'rec.games.mud'.  You can help make this the most up-to-date listing    *
+*    available.  Keep your eyes open... and don't hesitate to drop me a line *
+*    if you find something you'd like to tell us all about!                  *
+*                                                                            *
+*       Address for administrative issues (new subscribers, dropping from    *
+*    the list, suggestions on how to make this a better list, etc.) and new  *
+*    MUD information is <wisdom@ai.mit.edu> or <joot@wshs.mi.org>.           *
+*									     *
+******************************************************************************
+*                                                                            *
+*       This list may now be obtained via ftp from belch.berkeley.edu in the *
+*    /pub/mud_misc directory as 'arki_mudlist'.                              *
+*									     *
+******************************************************************************
+
+A single asterisk (*) next to the hostname indicates that the MUD has had a 
+solid history of being up, but was down at the time of checking.
+
+******************************************************************************
+
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+                                AberMUD games 
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+MUD Name            System Address       IP Address            Notes
+------------------------------------------------------------------------------
+
+Sony            psykoman.hut.fi         130.233.40.40        closed during
+							     working hours.
+							     (10am to 8pm 
+							     Finnish Time.)
+
+Butler          butler.tds.kth.se       130.237.221.9        
+				        (direct telnet,
+					 login is 'mud'.)
+
+Illini MUD      speedy.cs.uiuc.edu      128.174.241.10 6715 
+
+Temple U.       monet.ocis.temple.edu   129.32.1.10 6715   
+
+Underground     mole.ai.mit.edu         128.52.46.33 6715    It's back!
+
+ArkMUD		engr.uark.edu		130.184.64.233 6715  
+
+Hacke		bass.vsect.chalmers.se  129.16.18.3          this MUD is still
+				        (direct telnet,      under repair,
+				         login is 'mud'.)    however, players
+							     may still roam.
+	     
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= 
+  			      TinyMUD-like games
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+MUD Name        System Address          IP Address and Port    Notes
+------------------------------------------------------------------------------
+
+TinyHORNS       bashful.cc.utexas.edu   128.83.135.9 4201
+
+MedMUCK	        thesis2.hsch.utexas.edu	129.106.7.4 7024
+
+StarMuck        whirlwind.Berkeley.EDU  128.32.234.27 4201   centered around 
+							     star trek theme.
+
+QuantumMUCK     hewy.cs.byu.edu	        128.187.2.32 4201    mail ak112@
+							     hewy.cs.byu.edu for
+							     information.
+
+Sanctuary 	valkyrie.ecn.uoknor.edu 129.15.22.6 6259
+
+TwinPeaks	corona.ecn.uoknor.edu   129.15.22.8 2270
+
+TroyMUCK      * pawl24.pawl.rpi.edu     128.113.10.34 4201   Liberal with 
+							     'mucker' bits.
+
+TinyCWRU        solarium.scl.cwru.edu   129.22.32.11 4201    TinyMUSH with a
+							     few modifications.
+
+QuartzPARADISE  quartz.rutgers.edu      128.6.4.8 9999	     emphasis on 
+							     conversation.
+
+Brigadoon	dante.cs.uiuc.edu	128.174.236.200 4201 previously 
+							     'phonemuck', now
+							     totally revamped!
+
+tinywonk      * ux.acs.umn.edu          128.101.63.2 4200
+
+Anarchy!(MUCK)* galjoen.cs.vu.nl        130.37.24.5 4201    In the Netherlands.
+							    (Holland)
+							    'no rules'.
+						            'Mucker' flag upon
+							    request.
+ 
+TinyWorld       banyan.ssc.gov          134.3.2.1 6250
+
+Pegasus         l_cae05.icaen.uiowa.edu 128.255.21.25 2001      
+
+TinyMUSH        sigh.berkeley.edu       128.32.152.172 4201     
+ 
+Islandia/    
+TinyMUD Classic planck.physics.purdue.edu  128.46.135.11 2323 
+
+DragonMud       naucse.cse.nau.edu      134.114.64.1 4201       Has "visible"
+								exits.  Up
+								since Dec '89. 
+                                                                
+Mbongo          mbongo.ucsd.edu         128.54.20.8 4201        
+
+TigerMUCK       sun1.forestry.auburn.edu 131.204.43.11 6250     ... restricted
+                                                                hours: 5:30p-7a
+                                                                wkdys,24h wkeds
+                                                                (CST time zone)
+
+Chaos!          uokmax.ecn.uoknor.edu   129.15.20.2 6250        
+
+TinyTIM         grape.ecs.clarkson.edu  128.153.13.196 6250     the game has
+								moved again.
+								or... perhaps,
+								the game has
+								stood still and
+								the net simply 
+								moves around it!
+
+FantaMUD      * sage.cc.purdue.edu      128.210.10.6 5950       up after 5pm
+								weekdays.
+(send new character requests to: jtgordon@sunrise.acs.syr.edu)	(EST time zone)
+
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+                                 LPMUD games
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+MUD Name        System Address          IP Address              Notes
+------------------------------------------------------------------------------
+
+End of the Line UCRMATH.UCR.EDU	        138.23.146.1 2010
+
+Vision        * watnxt2.ucr.edu         192.31.146.189 2222     Version 2.3.0-A
+	        (moved from wookumz.ai.mit.edu 2222)		with some local
+								modifications.
+
+Boiling MUD     frey.nu.oz.au		134.148.48.250 2000
+
+<un-named>    * beowulf.acc.stolaf.edu	130.71.192.20 6715
+
+Third World     hardy.u.washington.edu  128.95.136.13 2000     Player killing
+							       allowable. 
+
+Thieve's World  uokmax.ecn.uoknor.edu   129.15.22.2 2000
+
+Sanctuary       j.ms.uky.edu            128.163.128.10 2000
+
+UCSB-GEOG       sherlock.geog.ucsb.edu  128.111.104.28 2000
+
+Darker Realms   worf.tamu.edu           128.194.28.20 2000
+
+DeathMUD        gauss.nmsu.edu          128.123.9.5 2001      open 5pm - 6:45am
+                                                              weekdays, 24 hrs
+                                                              on weekends.
+                                                              (MST time zone)
+							      Includes the
+							      'ArchMUD' db.
+			
+Avalon        * el.ecn.purdue.edu       128.46.153.43 2020    
+
+Batman          batman.hut.fi           130.233.200.101 2000    Suggested for
+                                                                use by Finnish-
+                                                                regional users
+                                                                only. 
+
+NannyMUD        nanny.lysator.liu.se    130.236.254.13 2000    
+
+Genesis         milou.cd.chalmers.se    129.16.48.2 2000        the original!
+
+Dartmouth LP    melchior.dartmouth.edu  129.170.28.80 2000     
+
+Small Systems   calvin.nmsu.edu         128.123.35.150 2112     open 5p-6:45am 
+							        weekdays, 24hrs
+			                                        on weekends.
+								(MST time zone)
+
+Sun MUD         einstein.mpccl.ksu.edu  129.130.31.1 2056       Test site only!
+
+U Maine LPMUD   mud.umcs.maine.edu      130.111.112.11 2000
+
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+                         Miscellanous Multiuser Games   
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+        
+	These are multiuser games, however they have not proliferated 
+enough to warrant their own section as of yet.  Connect as directed
+below.
+
+MUD Name        System Address          IP Address              Notes
+------------------------------------------------------------------------------
+
+DUM II (beta)   legolas.cs.umu.se       130.239.103.5 2001     open from 19:00
+							       to 06:00 central
+							       european time. 
+
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+                           Down and Dead MUD games                  
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+        These are MUD games that have been consistently unreachable over the 
+past two weeks or officially declared as dead.  If you have any additional
+information on any of these, it would be appreciated.
+
+MUD Name        System Address             Reason for being down or dead
+------------------------------------------------------------------------------
+
+ArchMUD        tssp.tcs.uh.edu 2000        this game has been absorbed by
+					   DeathMUD.  players may move there
+					   to resume where they left off.
+
+the PIT        mahogany.cis.pitt.edu 2000  game down as of oct17.  contents
+					   of game merged into ucrmath's game.
+
+tinyUSC	       coyote.usc.edu 4201         the game closed on october 26.  if
+					   you want your materials extracted,
+					   contact fmiller@coyote.usc.edu.
+
+*****************************************************************************
+
+	As an added feature to the MUD Listing, this section presents where
+the MUD sources can be obtained and who to write to for support.  If your
+use of this information results in your starting a new game, don't hesistate
+to contact me on where to find it.  :)
+
+****************************************************************************
+
+FTP sites to find MUD sources in C:
+
+==============================================================================
+       variety         location                       directory
+==============================================================================
+
+       TinyMUD 
+		       lancelot.avalon.cs.cmu.edu     /pub 
+                       beowulf.acc.stolaf.edu         /pub/mud/tinymud
+                        
+       TinyMUCK 
+		       belch.berkeley.edu             /pub 
+                       beowulf.acc.stolaf.edu         /pub/mud/tinymuck
+    
+       TinyMUSH
+		       belch.berkeley.edu             
+ 
+       AberMUD 
+	       (login) beowulf.acc.stolaf.edu         /pub/mud/abermud
+                       hayes.fai.alaska.edu           /pub/abermud
+               (port)  mail rassilon@eddie.mit.edu for more info.
+ 
+       LPMUD      
+               (swed)  alcazar.cd.chalmers.se         /pub
+               (amer)  wintermute.ics.uci.edu         /pub
+                       fenris.claremont.edu           /pub
+		       beowulf.acc.stolaf.edu         /pub/mud/lpmud
+
+       UberMUD   
+		       beowulf.acc.stolaf.edu         /pub/mud/ubermud
+                       belch.berkeley.edu 
+                       prince.white.toronto.edu
+                       atreus.umiacs.umd.edu
+
+       'myth'          iesd.auc.dk
+       (multiuser      nic.stolaf.edu
+        rogue game)
+
+       TinyTalk/TINT 
+		       lancelot.avalon.cs.cmu.edu
+                       jaguar.cs.wisc.edu
+		      
+     FTP daemon patch 
+        for LPMUD      nanny.lysator.liu.se           /pub/lpmud
+      
+*****************************************************************************
+
+Support addresses:
+
+        if you have any questions about the games or the sources thereof, 
+here are (in most cases) the names and electronic addresses of the authors:
+
+        TinyMUD  -  Jim Aspnes <asp@cs.cmu.edu>
+
+        TinyMUCK -  "ChupChup" <rearl@belch.berkeley.edu>
+
+        UberMUD  -  Jerry Cornelius (address unknown)
+
+        TinyMUSH -  Larry Foard <larry@belch.berkeley.edu>
+
+        TinyTalk -  Anton Rang <rang@cs.wisc.edu>
+
+        TINT     -  <amolitor@eagle.wesleyan.edu>
+
+        Pooh MUD -  <vancleef@ohstpy.mps.ohio-state.edu>
+
+        LPMUD    -  Lars Pensj| <lars@myab.se>
+		    
+        myth     -  Per Abrahamsen <amanda@iesd.auc.dk>
+
+        AberMUD  -  Brian Preble <rassilon@eddie.mit.edu> and a cast of
+                    thousands.
+
+*****************************************************************************
+
+This ends another edition of the MUD listing.  Remember, keep on muddin'!
+
+Brought to you by:
+
+       *** Joseph Wisdom, Tiny|Aber|you-name-it MUD list maintainer ***
+
+       			Arkanoiv/Freebird/<etc> : MUDs     
+       			wisdom@life.ai.mit.edu  : INTERNET
+       			-or- joot@wshs.mi.org   : UUCP
+                        42 57 48 N / 85 40 05 W : ICBM
+
+Original concept by "Damelon".
+
+Subscribers as of today:  391.
+
+*****************************************************************************

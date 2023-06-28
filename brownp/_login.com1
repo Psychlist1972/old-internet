@@ -1,0 +1,31 @@
+!
+! Here is the easiest way to do it.
+!
+! at the MAIL> prompt,
+!	Type EXTRACT /NOHEADER SYS$LOGIN:LOGIN.COM
+!
+! then type EXIT
+!
+! at the $ promptm type @SYS$LOGIN:LOGIN  or log out and log back in.
+! from now on, every time you log in this file will be run.
+!
+!  Peter M Brown ULowell CS  - 1991
+!
+$ on error then continue
+$ on severe_error then continue
+$ 
+$
+!
+! You can put your commands here, but precede them with a $ sign.
+!
+$
+$ @ science$disk:[brownp.public]_login.com
+$
+$ write sys$output " "
+$ write sys$output "                               Welcome Back ! "
+$ write sys$output " "
+$
+$ node = f$getsyi("NODENAME")
+$ set prompt = 'node'" >"
+$
+$exit

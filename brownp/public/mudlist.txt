@@ -1,0 +1,962 @@
+
+
+                                   M.U.D.
+                         Multiple User Dungeon/Domain
+                                 Theme List
+                           Updated as of 11/5/91
+
+                          Quick Reference Section
+
+Name                      Genre                       Theme
+----------------------------------------------------------------------------
+AberMUD1           | Mixed           | A mud with mixed sections of 
+(Not Active)       |                 | scenarios. (ex. Doiley Woods, Ghost-
+(AberMUD)          |                 | busters, Blue Moon Detective Agency) 
+----------------------------------------------------------------------------
+AberMUDII/III      | Fantasy         | Features a complete single user game.
+(Not Active)       |                 | 
+(AberMUD)          |                 |
+----------------------------------------------------------------------------
+AberMUD IV         | Fantasy         | AberMUDII + other areas people have 
+(Unknown)          |                 | added.
+(AberMUD)          |                 |
+----------------------------------------------------------------------------
+AberMUD V          | Fantasy         | A class based mud with vague AD&D
+(See Detailed Sec.)|                 | influences.
+(AberMUD)          |                 |
+----------------------------------------------------------------------------
+After Hours MUD    | Medieval        | A mud that sort of follows AD&D. 
+140.160.240.28 2000| Fantasy         | 5 different classes : Mage, Monk, 
+(LPMud)            |                 | Cleric, Fighter, Adventurer.
+----------------------------------------------------------------------------
+Akropolis          | Greek           | A mud with a Greek theme; players can
+139.124.40.4 6666  | (Mythology/     | encounter various characters from the
+(LPMud)            |  Historical)    | mythology and history of Greece. 
+----------------------------------------------------------------------------
+Allanite           | Sci-fi Fantasy  | A mud based of a quasi D&D atmosphere
+134.126.20.62 2222 |                 | with a little tech thrown in.
+(LPMud)            |                 |
+----------------------------------------------------------------------------
+ApexMUD            | Real life       | A mud with some mix, a "Hobbit Land" 
+130.63.7.6 4201    | Fantasy         | + other fantasy areas and real-life 
+(TeenyMUD)         |                 | areas of York University and Paris.
+----------------------------------------------------------------------------
+Batmud             | Fantasy         | (Unknown)
+130.234.0.3 2001   |                 |
+(LPMud)            |                 |
+----------------------------------------------------------------------------
+CaveMUCK           | (Unknown)       | A mud based on the RL hometown of
+(See Detailed Sec.)|                 | Cave (Isla Vista and Santa Barbara),
+(TinyMUCK)         |                 | and all sorts of others.
+----------------------------------------------------------------------------
+CopperDikumud      | Fantasy         | A hack & slash D&D type game with
+32.194.10.1 4000   |                 | multiclassing.
+(DikuMUD)          |                 |
+----------------------------------------------------------------------------
+Demesnes MUSH      | (Unknown)       | (Incomplete Information) 
+(Not Active)       |                 | With in it is a Pern section on Evrin
+(MUSH)             |                 | Weyr.
+----------------------------------------------------------------------------
+DragonMud          | Fantasy         | A mud based on 10th century London
+134.114.64.6 4201  |                 | with a secondary theme between 200ad-
+(TinyMUD)          |                 | 1900ad where elves, magic, and guilds
+                   |                 | abound.
+----------------------------------------------------------------------------
+DreamScape         | Mixed           | A ever changing land that is merely a
+139.78.1.13 6250   |                 | dream occuring in the player's mind.
+(UnterMUD)         |                 |  
+----------------------------------------------------------------------------
+ENTERPRISE         | Sci-fi          | A mud based on the world of Star Trek
+(Unknown)          |                 | the Next Generation.
+(TinyMUCK)         |                 |
+----------------------------------------------------------------------------
+Genesis            | Medieval        | (Unknown)
+milou.cd.chalmers  | Fantasy         |
+se 2000           |                 |
+(LPMud)            |                 |
+----------------------------------------------------------------------------
+HEROES             | Fantasy         | A mud based on the Marvel and DC 
+(Not Open Yet)     |                 | comics worlds.
+(TinyMUCK)         |                 |
+----------------------------------------------------------------------------
+High Seas MUCK     | (Unknown)       | A mud with a Pirate setting. 
+130.182.111.1 4301 |                 |
+(TinyMUCK)         |                 |
+----------------------------------------------------------------------------
+Igor               | Medieval        | This is the hangout for nostalgic
+epsilon.me.chalmers| Fantasy         | Genesis wizards and their old 
+se 1701           |                 | castles.
+(LPMud)            |                 |
+----------------------------------------------------------------------------
+KoBra              | Sci-fi          | A mud based on the Star Wars Trilogy.
+130.37.128.4 8888  |                 | 
+(LPMud)            |                 |
+----------------------------------------------------------------------------
+LambdaMOO          | Real life       | A mansion hundreds of years old with
+13.2.116.36 8888   | Fantasy         | many rooms containing unknown 
+(Moo)              |                 | mysteries. 
+----------------------------------------------------------------------------
+MicroMuse          | Sci-fi          | A realistic vision of the 24th cent-
+18.43.0.102 4201   | Education       | ury, a blend of high technology and 
+(MUSE)             |                 | social consciousness with emphasis on
+                   |                 | education, communication and concern 
+                   |                 | for the environment.'PBS of Cybernet'
+----------------------------------------------------------------------------
+MIST               | Horror Fantasy  | (Unknown)
+(Unknown)          | Humor           |
+(MUDDL)            |                 |
+----------------------------------------------------------------------------
+MUD1               | Fantasy         | (Unknown)
+(Not Active)       |                 |
+(MUDDL)            |                 |
+----------------------------------------------------------------------------
+MythMUSH           | Mixed           | Based on Robert Aspirin's Myth
+hpb.cis.pitt.edu   |                 | Adventures novels. It is centered
+4000               |                 | around the Bazaar at Deva, with all
+(MUSH)             |                 | other regions built as Dimensions.
+----------------------------------------------------------------------------
+Nightfall          | Modern Fantasy  | A parallel world with any people that
+134.2.62.161 4242  |                 | came from other worlds like our world
+(LPMud)            |                 | sort of a refugee for heroes, similar
+                   |                 | to Moorcocks multiverse.
+----------------------------------------------------------------------------
+Overdrive          | Fantasy         | A world of Swords and Sorcery, 
+128.8.251.6 5195   |                 | without hints of present-day or 
+(LPMud)            |                 | futuristic concepts.
+----------------------------------------------------------------------------
+PernMUSH           | Fantasy Sci-fi  | A mud based around the Dragonriders
+18.70.0.216 4201   |                 | of Pern novels by Anne McCaffrey.
+(MUSH)             |                 | (Northern Continent of Pern)
+----------------------------------------------------------------------------
+PythonMUCK4        | Humor Fantasy   | A mud based on the works of the 
+129.65.16.21 4201  |                 | Monty Python British humor troupe.
+(TinyMUCK)         |                 |
+----------------------------------------------------------------------------
+Rhostshyl          | Fantasy         | Based off the SilverGlass series but
+128.253.180.15 4201|                 | is an alternate world that contains 
+(MUSE)             |                 | Rhostshyl and has guilds.
+----------------------------------------------------------------------------
+ROCK               | (Unknown)       | Fraggle Rock - Silly/Kiddies TV
+(Not Active)       |                 |
+(MUDDL)            |                 |
+----------------------------------------------------------------------------
+SouCon MUSH        | Fantasy Sci-fi  | A mud based around the Dragonriders
+128.83.135.3 4201  |                 | of Pern novels by Anne McCaffrey.
+(MUSH)             |                 | (Southern Continent of Pern)
+----------------------------------------------------------------------------
+SvenskMUD          | (Unknown)       | A mud with reflects the Swedish 
+lysator.liu.se 2043|                 | culture with Swedish fairy-tales 
+(LPMud)            |                 | rumpnisse from Astrid. Lindgrens book
+                   |                 | Ronja R|vardotter. (text in Swedish)
+----------------------------------------------------------------------------
+The Shattered World| Medieval        | A complete and growing world with its
+(Unlisted)         | Fantasy         | own mythos and physical laws. 
+(LPMud)            |                 | (game system based on RuneQuest) 
+----------------------------------------------------------------------------
+TinyAmber          | Fantasy Sci-fi  | A mud based around the Amber novels
+(Unlisted)         |                 | of Roger Zelazny.
+(MUSH)             |                 | 
+----------------------------------------------------------------------------
+TinyCWRU           | Mixed           | Based around Case Western Reserve
+caisr2.caisr.cwru. |                 | University w/ regions ranging from
+edu 4201           |                 | the realistic to sf/fantasy. Has with
+(MUSH)             |                 | in it a Pern section on Tiglath Weyr.
+----------------------------------------------------------------------------
+TinyTIM            | Mixed           | A mud with many multi-theme "planes" 
+128.153.13.54 5440 |                 | leading to strange adventures. One of
+(MUSH)             |                 | the planes is Telgar Weyr, based off
+                   |                 | the Pern novels by Anne McCaffrey.
+----------------------------------------------------------------------------
+TOP MUD            | Real life       | A mud with a mixture of themes taken
+129.115.120.1 2001 | Fantasy         | from many different sources. (see
+(LPMud)            |                 | the detailed section)
+----------------------------------------------------------------------------
+Two Moons          | Fantasy         | A mud based on Windy & Richard Pini's 
+(Not Open Yet)     |                 | graphic novels, Elf Quest.
+(MUSH)             |                 |
+----------------------------------------------------------------------------
+UglyMUG            | Mixed           | A mud created deliberately for 
+130.88.14.17 4201  |                 | multi-theme use; no restrictions.
+(TinyMUD)          |                 |
+ ---------------------------------------------------------------------------
+VikingMud          | (Unknown)       | A mud based on Norse mythology. 
+129.241.18.41 2001 |                 | (Norse mileiu)
+(Unknown)          |                 |
+----------------------------------------------------------------------------
+Warhammer II       | Industrial      | Take the fantasy genre, beef up the 
+128.138.248.32 2112| Fantasy with    | magic, put in a cyberpunk mood, move
+(LPMud)            | eastern         | the tech level to the industrial age,
+                   | elements        | and drop everybody into a pseudo
+                   |                 | imperial china/japan like environment
+----------------------------------------------------------------------------
+
+
+                         Detailed Reference Section
+
+
+
+            Name: AberMUD1 
+            Type: AberMUD  [The first edition] 
+           Genre: Mixed
+         Address: All that remains are incomplete printouts 
+                  and memories alas.
+God/Admin of Mud: (Unknown)
+
+Theme:
+Mixed sections of scenario: 
+ Doiley Woods (childrens cartoon) 
+ Moorcock influenced material 
+ A section taken from UBIK (P.K.Dick) 
+ Ghostbusters 
+ Charlie and the Chocolate Factory (Roald Dahl) 
+ Blue Moon Detective Agency.. 
+ An Egyption pyramid. 
+ Several sections based on in-jokes at UCL London, and UCW Aberystwyth. 
+
+
+
+            Name: AberMUDII/III 
+            Type: AberMUD 
+           Genre: Fantasy. 
+         Address: No copies running with external access in the UK 
+God/Admin of Mud: (Unknown)
+
+Theme:
+The mud features a complete single user game and has some bits of
+book/music influence - vaguely inspired from Hawkwind "Live Chronicles" 
+and other material (Moorcock/R.E.Howard etc) Most ideas on the mud are
+basically original ones.
+
+
+            Name: AberMUD IV 
+            Type: AberMUD 
+           Genre: Fantasy
+         Address: "Lots.. look on the mudlist" 
+God/Admin of Mud: "Various..."
+
+Theme:
+Derived from AberMUD III to make the game larger and more maintainable - 
+basic fantasy setting with areas different for each game - core is fantasy 
+Common sections include Arthurian Legend, Zork, Phantom of The Opera and 
+lots of original fantasy materianl 
+
+
+
+            Name: AberMUD V 
+            Type: AberMUD 
+           Genre: A complex fantasy scenario.
+         Address: (See below)
+God/Admin of Mud: (See below)
+
+Theme:
+A class based mud with vague AD&D influences - classes being Warrior, 
+Barbarian, Nature Priest, Dark Priest, Assassin, And Magician. 
+Address ov various AberMUD V's:
+
+Janet: UK.AC.PSW.CD.ZEUS login:abermud 
+ Gods: Bonzo, Anarchy, Arashi
+
+Janet: 00006060180150   login:guest  type mw for bbs mud for abermud 
+ Gods: Anarchy, Bonzo, Potato, Hobbit 
+
+ Internet: eddie.ee.vt.edu 7658 
+God/Admin: Anarchy, Merlin, Eddie 
+
+ Internet: loligo.cc.fsu.edu 5000 
+God/Admin: Benny 
+
+All of the AberMUD5's run the same basic scenario - as its fairly new 
+people haven't started significantly branching out yet. 
+
+
+
+            Name: After Hours MUD 
+            Type: LPMud 
+           Genre: Mideval fantasy
+         Address: janice.cc.wwu.edu 2000 / 140.160.240.28 2000
+God/Admin of Mud: Elric, Absolut 
+
+Theme: 
+We sort of follow AD&D in our mud, we don't follow it completely closely, 
+but that is where we get alot of our ideas, such as the class system that 
+we have.  5 different classes :  Mage, Monk, Cleric, Fighter, Adventurer.
+
+
+
+            Name: Akropolis 
+            Type: LPMud 
+           Genre: Greek Mythology/Fantasy 
+         Address: 139.124.40.4 6666 
+God/Admin of Mud: Mysterious, Druide 
+  
+Theme: 
+Fairly straightforward LPMud with a Greek theme (ie everything built has to
+have a basis in Greek history or legend).  Still growing; we are currently 
+just putting the finishing touches on the quest system.  We are in need of 
+good programmers--if you're good with LP code, and have an interest in 
+Greek myths, take a look (for that matter, take a look even if you're not 
+interested in coding--players are always welcome!) 
+
+
+            Name: Allanite
+            Type: Lpmud
+           Genre: scifi fantasy
+          Adress: 134.126.20.62 2222
+God/Admin of Mud: (Unknown)
+
+Theme:
+based of a quasy D&D atmosphere with a little tech thrown in.
+
+
+
+            Name: ApexMUD
+            Type: teenymud alpha1.2
+           Genre: fantasy & real life (eclectic)
+                  (but will accept building on other themes)
+         Address: apex.yorku.ca 4201 / 130.63.7.6 4201
+God/Admin of Mud: Wizard
+
+Theme:
+This mud started with tinybase, so it has a certain similarity
+with the original Islandia. One section of the MUD "Hobbit Land" has a
+home which might belong to a Tolkien Hobbit, and other sections which;
+are incomplete, include the real-life areas of York University and Paris.
+
+
+
+            Name: Batmud 
+            Type: Lp 2.4.5. 3.0 version is under developement. 
+           Genre: Fantasy. 
+         Address: batmud.jyu.fi 2001 / palikka.jyu.fi 2001 
+                  130.234.0.3 2001 
+God/Admin of Mud: Anipa, Extechop, Jaf and Rincewind. 
+           Theme: (Unknown)
+
+
+
+        Mud Name: CaveMUCK 
+            Type: TinyMUCK 2.2 with CaveMUCK extensions 
+                  (Time Traveller uses these too) 
+           Genre: (Unknown)
+         Address: Originally at piggy.ucsb.edu 2000, 
+                  has been running since a few days ago at
+                  betz.biostr.washington.edu 2283 
+God/Admin of Mud: Jingoros
+
+Theme:
+Started out as a caving theme, but there are various other theme areas
+such as anime, an area based on the RL hometown of Cave (Isla Vista and
+Santa Barbara), and all sorts of others. 
+
+
+
+            Name: CopperDikumud 
+            Type: Dikumud
+           Genre: Fantasy
+         Address: copper.denver.colorado.edu 4000 
+God/Admin of Mud: Lin (Swiftest)
+
+Theme:
+My mud doesn't have a specific theme. It's sort of your basic hack & slash
+D&D type game. I prefer to advance the 'state of the art' rather than
+concentrate on a specific theme. For instance, on my mud, I added 
+multiclassing and an arena. The arena is a place where people can hack at
+each other without any of the normal penalties in the outside world.
+
+
+
+            Name: Demesnes MUSH
+            Type: MUSH
+           Genre: (Unknown)
+         Address: No longer on net 
+God/Admin of Mud: (Unknown)
+
+Theme: (information on theme may be incomplete -EP) 
+Has with in it a Pern section on Evrin Weyr that is based around the
+Dragonriders of Pern novels by Anne McCaffrey.
+
+
+
+            Name: DragonMud 
+            Type: TinyMud 1.5.5(j7)
+           Genre: fantasy 
+         Address: 134.114.64.6 4201 / ghost.cse.nau.edu 4201
+God/Admin of Mud: Dragon - Admin
+                   Jopsy - God/Admin 
+                  Persia - God/Alternate Admin 
+                 Bedouin - God/Sub admin 
+                    Rork - God/Sub admin 
+Theme:
+
+Since DragonMud came onlin in Nov 89, it's primary setting has 
+been in TinyLondon (Circa 200ad-1900ad.).  As inspired by the 
+poetry of William Blake and books by Tim Powers. 
+(i.e. "The Anubis Gates" and "Dinner at Deviant's Palace") 
+  
+Several overlapping themes can be found by persuing any of the 
+multi-quests, or just strolling.  (Many of the quests are 
+interlinked and built upon each other, so that completing one 
+quest leads you into another.) 
+  
+DragonMud can keep track of your progress, your membership in 
+guilds or any other various attributes you may have picked up 
+in your explorations, which makes questing and building a bit 
+more interesting than it would be on a regular TinyMud. 
+
+
+
+            Name: DreamScape 
+            Type: UnterMUD 
+           Genre: um... anything 
+         Address: littlewood.math.okstate.edu 6250 / 139.78.1.13 6250 
+God/Admin of Mud: Moira 
+
+Theme:
+DreamScape is just that: a dream. The general concept is that the player 
+is merely dreaming, and since anything can happen in dreams, therefore 
+anything can happen in DreamScape. Everything from hard SF to fantasy to 
+horror belongs here. Also, being an UnterMUD, DreamScape is directly 
+linked with 6 other UnterMUDs, with 3 others being reachable through
+those 6. 
+
+
+
+            Name: ENTERPRISE
+            Type: TinyMUCK
+           Genre: Sci-fi
+         Address: (unknown)
+God/Admin of Mud: Deanna Troi, Picard and Data
+
+Theme: 
+A mud world of Star Trek the Next Generation based off the TV show 
+Star Trek: The Next Generation.
+
+
+
+            Name: Genesis
+            Type: LPMud 3.0
+           Genre: Strictly medieval fantasy
+         Address: milou.cd.chalmers.se 2000 (See below)
+God/Admin of Mud: (Unknown)
+
+Theme: (Unknown)
+This is the original LPMud site and still the main source of new 
+developments. It is currently only open to old wizards due to the 
+development of an entirely new mudlib. 
+
+
+
+            Name: HEROES
+            Type: TinyMUCK
+           Genre: Fantasy/Sci-fi
+         Address: (not ready to be released yet)
+God/Admin of Mud: Phoenix and Wolverine
+
+Theme: 
+Mud worlds based off the comics by Marvel and DC.
+
+
+
+            Name: High Seas MUCK 
+            Type: TinyMUCK 2.2hs
+           Genre: (Unknown)
+         Address: 130.182.111.1 4301 / opus.calstatela.edu 4301 
+God/Admin of Mud: Ken 
+           Theme: Pirate Theme 
+
+
+
+            Name: KoBra
+            Type: Lpmud
+           Genre: Sci-fi
+          Addres: 130.37.128.4 8888
+God/Admin of Mud: (Unknown)
+           Theme: based off of the Star Wars Trilogy 
+
+
+
+            Name: Igor
+            Type: LPMud 3.0
+           Genre: Mainly medieval fantasy 
+          Addres: epsilon.me.chalmers.se 1701
+God/Admin of Mud: (Unknown)
+
+Theme:
+This is the hangout for nostalgic Genesis wizards and their old 
+castles. Mixed with a lot of new stuff it forms the basis for a very 
+poular mud.
+
+
+
+            Name: LambdaMOO
+            Type: Moo (First LamdbaMOO. Lambda was the creator.)
+           Genre: Real life blending into fantasy.
+         Address: lambda.parc.xerox.com 8888 / 13.2.116.36 8888
+God/Admin of Mud: Haakon, with help from yduJ, Gary_Severn, Rog,
+                  Grump, and Gemba
+
+Theme:
+LambdaMOO takes place inside and on the grounds of a large, sprawling 
+mansion.  The house has existed in one form or another for literally
+hundreds of years, passing through the hands of a bewildering
+seqeuence of owners.  Most of the owners have taken the opportunity to
+add to the mansion, extending it in dozens of different directions,
+each with a completely different vision and architectural style.  In
+short, this house is a bit of a mongrel.
+
+The house is also very large, so large in fact that the current
+occupants themselves have only ever explored a tiny portion of it.
+What may be going on in other parts of the house is anybody's guess.
+I wouldn't be the least bit surprised to hear about space aliens,
+ancient secret societies, or even high-tech cottage industries that
+are making use of parts of the house.  With nobody having the means or
+inclination to patrol the whole place, almost anything could be
+squatting here.
+
+BUILDING RESTRICTIONS:
+LambdaMOO is a programmable mud, and players who want to build are
+strongly encouraged to ask to become programmers before doing
+substantial building.  Building is limited by a quota system; only
+those who build well (in the unfair and capricious opinions of the
+wizards) get to build more.
+
+
+
+        Mud Name: MicroMuse 
+            Type: MUSE (Multi-User Simulation Environment) 
+           Genre: Science fiction and science education, with an emphasis
+                  on the science. MicroMuse views itself as the 
+                  'PBS of Cybernet'. 
+         Address: chezmoto.ai.mit.edu port 4201 / 18.43.0.102 4201 
+God/Admin of Mud: Prime Director: Jin 
+                  Assoc. Directors: (in order of increasing player id) 
+                  Koosh, Moulton, Erk, Ender, Michael, Priam_Agrivar,
+                  Aslan 
+  
+Theme:
+MicroMuse is intended to be a realistic vision of the 24th century, a 
+blend of high technology and social consciousness with emphasis on 
+education, communication and concern for the environment. Our charter 
+is available through anonymous ftp to michael.ai.mit.edu (18.43.0.177) 
+(tinymuse/charter).  The hub of Micro is based within an orbiting space 
+city. There exists an extensive space system, complete with starships, 
+as well as a continuously growing number of other attractions 
+(including Narnia, various logic puzzles and our own Micro university). 
+   
+MicroMuse is not based upon any one book, although the ideas present 
+within our adopted level of technology have appeared in books by Ben 
+Bova, Larry Niven and other notable SF writers.  There are also 
+various planets and high-tech attractions within the Micro system 
+which are based upon various books, including: Anne McCafrey's Pern 
+series, L. Frank Baum's Oz series, C.S. Lewis' Narnia series, Douglas 
+Adams' Hitchhiker's Guide series, and Raymond Smullyan's Logic Puzzles. 
+  
+MicroMuse is the only Mu* on the InterNet aimed at the Education 
+Community.  We seek participation from K-12 schools and institutions 
+of higher learning, and support from the National Science Foundation. 
+  
+-- Compiled by Ender and Moulton 
+
+Extra note from Pern MUD FAQ: Micro has numerous weyrs, the most
+active of which is Shadowmere. The 'Pernth' area is described as "New Age."
+Dragons are not always the traditional gold, bronze, brown, blue, and
+green; they can be black, sapphire, red, or almost any other color. 
+
+
+
+            Name: MIST 
+            Type: MUDDL (On a DEC10) 
+           Genre: Mishmash of horror, fantasy and monty pythonisms.
+         Address: (Unknown)
+God/Admin of Mud: Numerous - refer current queries to 
+                  michael@hicom.lut.ac.uk 
+Theme:
+Mist was probably the most violent mud ever written, and is often described
+as a text only arcade game. This one is being ported to use the Aber5 driver,
+and should then re-appear as mad and bloody as ever. 
+
+
+
+            Name: MUD1 (The original) 
+             ype: MUDDL (On a DEC10) 
+           Genre: Fantasy, very tightly designed and consistent.
+         Address: Nowhere.. passed into commercial world... (RIP) 
+God/Admin of Mud: Richard Bartle Roy Trubshaw (unknown) + others 
+           Theme: (Unknown) 
+
+
+
+            Name: MythMUSH 
+            Type: MUSH 
+           Genre: Mixed
+         Address: hpb.cis.pitt.edu 4000 
+God/Admin of Mud: Socrates 
+
+Theme: 
+MythMUSH's theme is drawn from Robert Aspirin's Myth Adventures novels.
+It is centered around the Bazaar at Deva, with all other regions built 
+as Dimensions. Almost anything is possible, from fantasy to science 
+fiction to any bizarre permutations thereof. 
+
+
+
+            Name: Nightfall
+            Type: LPmud (Version 3.0) 
+           Genre: modern fantasy (see below) 
+         Address: nova.tat.physik.uni-tuebingen.de 4242 / 134.2.62.161 4242 
+God/Admin of Mud: Zeus,Deepthought,Michael,Sam 
+  
+Theme: 
+The theme will basically be the same (modern fantasy world) 
+but I try to explain why it is so (It's sort of a parallel world with 
+many people that came from other worlds like our world, sort of a 
+refugee for heroes, it's something similar to Moorcocks multiverse). 
+For now slightly modified original LPmud combat system (2.4.5) but with 
+mages guild (spells similar to AD&D spells). I'm currently writing a
+historical background. 
+
+The wizards have used several favourite fantasy books, like Elric by 
+Moorcock, Ultima, Tolkien. We even have part of Zork. I want to 
+implement Night & Day in the new mudlib and probably have several suns 
+as in Nightfall by Isaac Asimov. I got the name from that book although 
+the mud currently does have nothing in common with the book but the name.
+
+The "political" system. is set up in this manner:
+-Gods (or Admins) who do modifications to the basic mudlib and the 
+ gamedriver 
+-Archmages and Vicemages for several departments (Defence, Guilds, 
+ R&D, Quests, Building). This works quite fine as each one has his 
+ more or less clearly defined responsibilities. In his area each 
+ Archmage is free to do what he wants (well, almost). 
+-Normal Wizards 
+All wizards can take part in wizard conferences that are held in 
+non regular times. Archmages are voted by all wizards and approved 
+by the Admins. 
+
+
+
+            Name: Overdrive 
+            Type: LpMud 3.0 
+           Genre: Fantasy, pure unadulterated fantasy. 
+         Address: overdrive.watch.mit.edu 5195 
+God/Admin of Mud: Rusalka/Dharma/Imaginos 
+
+Theme: 
+The theme of Overdrive is simple. We aim to bring players a world of Swords
+and Sorcery, without hints of present-day or futuristic concepts. We aren't
+based off any books, Role Playing Games, or movies. 
+
+
+
+            Name: PernMUSH 
+            Type: Mush
+           Genre: Fantasy/Sci-fi
+         Address: milo.mit.edu 4201 / 18.70.0.216 4201
+God/Admin of Mud: Moonchilde
+
+Theme:
+Established: January 1991 
+This is a "strictly-themed" mud based around the Dragonriders of 
+Pern novels by Anne McCaffrey. It is set 200 years after the events of the 
+latest book (Renegades of Pern), approximately. It follows the books very 
+strictly; building is done directly from the Atlas of Pern and the 
+Dragonlovers Guide to Pern, non-Pernese characters and objects are not
+allowed. There are three currently-open Weyrs - Fort, Ista, and Benden
+- and the building centers around the areas traditionally Beholden to
+them. Role-playing is stressed. Pern is a "serious" MUSH - most regular
+players have an official position, so they have a base from which to
+role-play. 
+
+FTP documents for Pern are located at caisr2.caisr.cwru.edu [129.22.24.22]
+The main two files are pernkit.shar.Z  (general information on PernMUSH)
+and pernmaps.shar.Z (ASCII maps of Pern's major areas).
+
+
+
+            Name: PythonMUCK
+            Type: TinyMUCK 2.2.3d-beta 
+                  [third revision of 2.2 with daemon extensions]
+           Genre: Fantasy
+         Address: zeus.calpoly.edu 4201 / 129.65.16.21 4201
+God/Admin of Mud: Doran: awozniak@zeus.calpoly.edu,
+                  Claudius: claudius@zeus.calpoly.edu
+
+Theme:
+Well, it's partially based on the works of the Monty Python british humour
+troupe. Humor and fantasy, as well as current day aspects.
+
+
+
+            Name: Rhostshyl
+            Type: MUSE-based with modifications
+           Genre: Fantasy
+         Address: 128.253.180.15 4201
+God/Admin of Mud: Nyctasia
+
+Theme:
+The name Rhostshyl was taken from J.F. Rivkin's SilverGlass series
+from ACE Books. 
+
+       Silverglass(1986)
+       Web of Wind(1987)
+       Witch of Rhostshyl(1989)
+       Mistress of Ambiguities(1991)
+
+  The names Nyctasia and Corson, who is the the Maas-Neotek Robot
+for Rhostshyl. were also taken from the book. Rhostshyl was the name
+of the castle and city that Nyctasia was originally from. But here
+the MUSE deviates from the series. Rhostshyl MUSE is an alternate
+world that contains Rhostshyl castle and the city as well as many
+other fantasy domains. Each domain is ruled by a Guild Administrator.
+As of the end of September 1991, we have guilds who call themselves
+Ring Bearers, Mages, Priests, Bards, Dwarves, Rogues, Demonknights,
+Collegiates, and Entertainers. Each guild has an object(s) of power
+to signifys its status. For example, Ring Bearers have rings that
+allow them the abilities of teleportation for themselves and others,
+and esp abilities. The objects of power are usually some combination
+of Wizard/God powers that have been toned down and sprinkled with
+effects. Guild members are managed by their administrator. Besides
+guilds, players can be simple citizens that participate within the
+realm. New players are called Wanderers until they ask and are granted
+citizenship through the +mail of the MUSE. Rhostshyl also supports
+the MUSE style of ranks for inherient power... Guest, Wanderer, Citizen,
+Guard, Royal Guard, Architect, Administrator, Royality.
+  Currently, the guilds system is growing strong. An economic system
+is starting to develop along with a RPG flavor combat system. The db
+is well over 3000 objects with 700 Rooms and 230 players.
+
+
+
+            Name: ROCK 
+            Type: MUDDL (On a DEC10) 
+           Genre: (Unknown)
+         Address: (Unknown)
+God/Admin of Mud: Foxy
+
+Theme:
+Fraggle Rock - the multiuser game. A small silly game that could be 
+played during the day on Essex DEC10, unlike mud which only ran on the
+night time quotas.
+
+
+
+            Name: SouCon MUSH 
+            Type: Mush
+           Genre: Fantasy/Sci-fi
+         Address: dewey.cc.utexas.edu 4201 
+God/Admin of Mud: T'nor
+
+Theme:
+Established: June 1991 
+PernMUSH's "southern sister". SouCon details the Southern Continent of 
+Anne McCaffrey's Dragonriders of Pern novels. Role-playing and
+"authentic" building are stressed. Currently, Southern Weyr is the only
+open weyr.
+
+
+
+            Name: SvenskMUD
+            Type: LPMud version is 2.4.5-L7 (with a few minor changes)
+           Genre: (Unknown)
+         Address: lysator.liu.se 2043
+God/Admin of Mud: Linus Tolke
+
+Theme:
+The goal is to get a mud with reflects the Swedish culture and so we
+have monsters from the Swedish fairy-tales: rumpnisse from Astrid
+Lindgrens book: Ronja R|vardotter I have now translated everything of
+importance, including Leo and quests. I still need to work on translation
+of doc-files and some wizard tools. Its still a small mud and you will
+immediately get problems if you don't know Swedish. If you can't use 
+the }{| chars, don't try it.
+
+
+
+            Name: The Shattered World
+            Type: LPmud (locally hacked bizzare derivative)
+           Genre: medieval fantasy
+         Address: unlisted due to departmental policy ;-(
+God/Admin of Mud: Gandalf, Billy, Rhys, Calthron
+
+Theme:
+The Shattered World was a world which was dropped and shattered into a
+million pieces which are floating in space. This idea was ripped from a book,
+and we don't follow this theme in any way whatsoever at all any more, not
+even a little bit. :-)  We have made a large effort to move away from Lars'
+D&D fixation. Our more complex game system is partially based in spirit on
+the classic RuneQuest (Chaosium) game system, but bears little resemblance
+in actual implementation. We are currently trying to develop a consistent
+mythos for the Shattered World. We do not intend to force this mythos to
+control the entire emphasis of the mud, rather we want our mud to be like
+the real world - interesting in its variety. We are making significant
+efforts to eliminate anachonism, however. The mythos we are developing will
+be a description of how the world came into being, and the resulting 
+physical laws.
+
+
+
+            Name: TinyAmber 
+            Type: Mush
+           Genre: Fantasy/Sci-fi
+         Address: (Unlisted by request) 
+God/Admin of Mud: Mandor
+
+Established: September 1991. Not open to the public yet. A mud based around
+the Amber novels of Roger Zelazny. Amber is the "one true world" of which
+all others are merely shadows. Currently in the initial phase of 
+construction, it eventually hopes to have the main regions of the Amber
+novels built, as well as some of the Shadow Worlds. 
+
+
+
+            Name: TinyCWRU
+            Type: MUSH
+           Genre: realistic to sf/fantasy
+         Address: caisr2.caisr.cwru.edu 4201 
+God/Admin of Mud: Wizard
+
+Theme:
+TinyCWRU is a multi-genre mud. It has regions ranging from the
+realistic to sf/fantasy. It is based around Case Western Reserve University.
+It also has with in it a Pern section on Tiglath Weyr that is based off
+Dragonriders of Pern novels by Anne McCaffrey.
+
+
+
+            Name: TinyTIM
+            Type: MUSH with TIM modifications
+           Genre: Mixed
+         Address: cheetah.ece.clarkson.edu 5440 / 128.153.13.54 5440
+God/Admin of Mud: Trout.Complex and Sketch
+
+Theme: 
+TinyTIM stresses silliness and freedom as its main themes. It has a wide
+variety of themes, divided into a nexus of planes. There is a large urban
+area and a hotel often leading to strange adventures: from the horrific, 
+to the amusing, to the surreal, to the historical. One plane given special
+attention is based around the Dragonriders of Pern novels by Anne McCaffrey.
+It centers around Telgar Weyr and the areas traditionally Beholden to that
+weyr. It's the oldest active Pern area.
+
+
+            Name: TOP MUD 
+            Type: lpmud 3.0M.
+           Genre: fantasy, real life, etc. 
+         Address: lonestar.utsa.edu 2001 / 129.115.120.1 2001
+God/Admin of Mud: Beowulf, Stanman, and Toonsis.
+
+Theme:
+Top mud had many of the here are some.... 
+
+Some areas are similar to RPG.  There is a D&D'ish type area in 
+which you can kill pit fiends, hell hounds, and various other devils 
+and demons. (Toonsis) 
+
+We have Camelot.  The creator classifies it as fantasy, maybe swords 
+and sorcerers type of thing, medieval, magic works, non-humanoid 
+monsters. (Beowulf) 
+
+We have hodge-podge areas with pirates, primitive villagers, priests, 
+and Elvis! (Kermit) 
+
+We also have areas characterized by depression, morbidity, slightly more 
+modern than medieval, fantasy. (Lucincia) 
+
+And we have your basic fantasy, magical environment (with pyramids and 
+desert but still fanstasy and magical). (Ringer) 
+  
+We have your standard medieval areas, too. (Quartz & Macleod) 
+  
+We also have a vampire lair. (Lestat) 
+  
+We have a cartoon land (Bugs Bunny, Elmer Fudd, etc), a story land 
+(Goldilocks, Red Riding Hood, 3 Bears, etc), and a marvel land (Superman, 
+Wonder Women, Incredible Hulk, etc). (Toonsis) 
+  
+We also have college campuses.  Although they are not completely open yet, 
+we have UTSA and UT (including the stuff along the way like Aquarena 
+Springs, etc).  (Toonsis & Stanman)
+
+
+
+            Name: Two Moons 
+            Type: MUSH 
+           Genre: Fantasy
+         Address: hardy.u.washington.edu 4201 
+                  Not open to the public yet.
+God/Admin of Mud: Savah 
+
+Theme: 
+The theme of Two Moons is Elf Quest, drawn from the graphic novels by
+Windy & Richard Pini. Role-playing and the recreation of the world of EQ
+is stressed.
+
+
+
+            Name: UglyMUG 
+            Type: UglyMUG (yet another TinyMUD derivative) 
+           Genre: Deliberately Mixed
+         Address: 130.88.14.17 4201 
+God/Admin of Mud: Peter Crowther 
+  
+Theme: 
+Deliberately multi-theme; this is an experimental MUG and we see 
+no point in restricting people. This leads to some problems maintaining 
+consistency, but has also given rise to some good adventures. No particular
+spells or abilities are supported; a programming language is available to
+allow players to roll-their-own. A primitive combat system is implemented;
+it is not taken from any RPG and is not genre-specific. 
+
+
+
+            Name: VikingMud 
+            Type: (Unknown)
+           Genre: (Unknown)
+         Address: 129.241.18.41 2001 (in Trondheim, Norway)
+God/Admin of Mud: Murky, Tenghil, Pez, Aurondas
+
+Theme: 
+Norse mythology / Norse mileiu. Vikings, northern mythology 
+(We're moving slowly in that direction)
+
+
+
+            Name: Warhammer II
+            Type: LPmud
+           Genre: 'industrial fantasy with eastern elements'
+         Address: 28.138.248.32 2112 / dogstar.colorado.edu 2112  
+God/Admin of Mud: (Unknown)
+
+Theme:
+Take the fantasy genre, beef up the magic level a bit, put in a cyberpunk
+mood, move the tech level to the industrial age, and drop everybody into
+a psuedo imperial china/japan like environment.
+
+The mud has no basis on the games put out by GW.
+
+WARNING: We are NOT yet an open mud, but are more in the 'beta' stages.
+Thus, we claim no responsibility to maintain your character's
+file should a major change be made, nor to credit crashes, or
+even maintain game balance at this point.
+
+
+----------------------------------------------------------------------------
+Disclaimer: I make no claims that any of the above information is my own, 
+but rather a compilation from what ever sources I can find or gather. Some 
+of the above postings are from Mail messages, Rec.games.mud postings and 
+FAQ's. If any of the above information is inaccurate please send me
+corrections.If you would like your mud placed in this listing, please follow
+the above formats and send complete information. Send corrections and your 
+mud themes to: 
+
+  bitnet: Fsdlk@alaska
+internet: Fsdlk@acad3.alaska.edu
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~  ...........  .......          .           .       .            ~
+~  .            .      .        Nasha tai no kasei!         .   . ~
+~  ...          .......           .            .                  ~
+~  .            .               Prosperity and Long Life, To You. ~
+~  .... xisting . hantom              .             .             ~
+~                             .                            .      ~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

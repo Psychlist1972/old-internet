@@ -1,0 +1,103 @@
+X-News: woods rec.humor.funny:1563
+From: denelsbe@cs.unc.edu (Kevin Denelsbeck)
+Subject:Lessons Learned From Comp 4
+Date: 17 Oct 91 10:30:04 GMT
+Message-ID:<S317.5889@looking.on.ca>
+
+
+
+I recently finished up teaching Comp 4, the computer literacy course here at
+UNC, during a compressed summer session.  Comp 4 is an introductory class that 
+assumes NO knowledge of computers among its students, and believe me when I say 
+that this was often the case.  The class was great fun to teach, and one of the 
+facets that made it interesting (day-in and day-out) was the wealth of new 
+knowledge that the students imparted to me on tests and examinations.  I 
+thought that I'd share some of these nuggets with you.  My comments are in 
+the standard C delimiters (/* and */).  *Your* comments are encouraged.  Here 
+goes:
+
+	Bacchus invented FORTRAN.  /* I knew FORTRAN was old, and that it may
+		have been designed under the influence of alcohol, but... */
+
+	There are three kinds of program statements: sequence, repetition, and
+		seduction.
+
+	There are two types of graphics: vector and rascal.  /* Otay... */
+
+	Programming languages have specifictions.  /* Obviously this student
+		has dealt with a few standards. */
+
+	Macs are compatible with each other.  /* Imagine the alternative:
+		"What's your Mac's serial number?  We'll go back to the ware-
+		house and get your software." */
+
+	Doctors use computers to create a three demential picture of a person's
+		brain.  /* Is this classic, or what? */
+
+	One kind of a hostile computer program is a Trojan.
+
+	C is a logical programming language. /* <rim shot> */
+
+	Heuristics (from the French heure, "hour") limit the amount of time
+		spent executing something.  [When using heuristics] it
+		shouldn't take longer than an hour to do something.  /* An
+		absolutely terrific "false cognate". */
+
+	Having the computer automatically fill in images for animation is
+		called "spleening".  /* Derivation: most likely "splines" +
+		"tweening". */
+
+	One method of computer security is a phone line.  /* She qualified it
+		later by adding, "You have to know the number." */
+
+	Video games are examples of fault-tolerant systems.
+
+
+On one test, I gave the students some abbreviations and asked them to tell me
+what they stood for.  You won't believe the creativity of a student in a test
+situation.  For example, one of the abbreviations was "fax", which *really*
+stands for "facsimile".  However, various Comp 4'ers said it stood for:
+	
+	Fiber-optic Aided Xeroxing
+	Frequency Automatic X-rays
+
+	/* and my favorite... */
+
+	Fast A** Xeroxing
+
+
+The students also had to hand in term papers, and these were rife with interes-
+ting tidbits.  I've clipped a few, quoted verbatim:
+
+	"The worst thing the Mac has to offer, is that cooperative multitasking
+		is not available to be used."
+
+	"... footnotes present an interesting problem, which may be solvable by
+		Hypercad."  /* I assume the last term is the newest rage -- a
+		free-form database for designers. */
+
+	"...Linda, a blind girl, was able to attend public school due to the
+		aid of a speaking computer that taught her the basic
+		fundmamentals [sic] of grammar and spelling."  /* Linda may
+		want to lend her computer out... */
+
+	"The program is manufactured by Quantel, a Silicon Valley company
+		located in Clearwater, Florida."  /* A *long* valley, as my
+		roommate put it. */
+
+	"At the beginning of each season [Edwin] Moses teats himself on
+		computerized weight machines..."  /* Ouch! */
+
+
+Hope you enjoyed all these.  If you've had similar experiences, I'd love to
+hear about them!
+
+Cheers,
+
+Kev @ UNC
+
+--
+Selected by Brad Templeton.  MAIL your joke (jokes ONLY) to funny@looking.ON.CA
+
+Please!  No copyrighted stuff.  Also no "mouse balls," dyslexic agnostics,
+Iraqi driver's ed, Administratium, strings in bar or bell-ringer jokes.

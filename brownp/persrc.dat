@@ -1,0 +1,55 @@
+# Created by Personals  v2.4
+# Written By Peter M Brown UMass Lowell 1991-92
+#
+# Feel free to edit this file and change the defaults.
+#
+##########################################################################
+
+# Do you want an enhanced display (reverse, bold etc...)
+
+enhanced = TRUE
+
+# What directory should extracted files show up in (sys$login:,
+# [SMITHJ], [SMITHJ.PERSONALS]) are all valid specifications)
+
+extract_directory = science$disk:[brownp.articles]
+
+# What is your personal name. Leave this empty if you want to be prompted.
+
+personal_name = Psychlist
+
+# What is the default "To Line" to show up in the personals
+# header section? (ex All interested parties.)
+
+default_to = Whomever. Whataver. Who cares.
+
+# What is your signature file (include directory specification.) 
+# example: (sys$login:sigfile.sig, [SMITHJ.PERSONAL]sigfile.sig)
+
+sigfile = sys$login:.sig
+
+# What directory should the temporary files be kept in ? 
+
+temp_dir = science$disk:[brownp.tmp]
+
+# What is the DCL command line used to call your editor?
+# Don't change this if you are not sure what it means.
+# This can be used to call up command libraries and/or
+# environments with your editor
+
+# example: EDIT/CREATE (which is the default) or LSE or EDIT/TPU.
+
+editor_call = LSE
+
+# What prompt to you want to have for the DCL spawn?
+
+dcl_prompt = Personals DCL> 
+
+# Do you want the menu highlighted or do you want to use 
+# the -> for selections (highlight, arrow)
+
+menu_kind = HIGHLIGHT
+
+# Do not add any extra definition lines to this file,
+# feel free to add comment lines/ documentation, but they
+# Will disappear when versions are upgraded.

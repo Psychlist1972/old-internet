@@ -1,0 +1,111 @@
+			T i m m e   R i f f t e 
+
+			   by Peter M Brown
+
+
+              run science$disk:[brownp._mithril]time_riffte
+
+
+Information for Play-testers.
+	If you have any suggestions on how to improve the game, or make it 
+	more interesting or user-friendly, send EMail to BROWNP.
+	
+	Most rooms and objects are not yet finished, but will be soon.
+
+Concept :
+	Single user interactive fiction, where you decide how the plot
+	evolves.
+
+	You are an American stuck in Japan in the year 1994.  A great magic
+	force has been unleashed...a great orb, and is being used to 
+	systematically destroy the world.
+	
+	Your role:
+		Go to the past and destroy the orb (Medeival times)
+		Once the orb is destroyed, the force of teh explosion
+		knocks you into another dimension, so you must find your
+		way out of that dimension.
+		Get back to the present (why? because you spent the last 
+		6 months compiling a report for your company and you
+		dont want to have wasted all that time for nothing...that
+		is why you 'save the world')
+
+
+T e c h   N o t e s :
+
+
+Moving
+	You can leave a room through any of the traditional
+	directions (north, south, east, west, up, down) as well as
+	the addition of NE SE NW SW.  
+	examples:
+		> GO south
+		> northeast
+		> sw
+		> up
+		> d
+		> leave southwest
+
+
+Objects
+	Objects can be reffered to by any of a whole list of synonyms for 
+	that object.  You dont have to type just ONE name
+		> get a rock
+		> get the stone
+		> examine pebble
+		
+		> look at some writing
+		> examine the mirror
+		> look at the phrase
+
+	Objects can have descriptions up to 12 lines long as well as a label
+	description of up to 12 lines long ( one or 2 lines is the norm)
+	as well as get success and get failure descriptions, and an official
+	name which shows up in your inventory.
+
+
+Rooms
+	Rooms can have descriptions up to 12 lines long.  (see movement for
+	information on exits)
+	Some rooms have procedures entirely thier own like the bus stop 
+	and the vortex room (not yet implemented) .
+
+
+Monsters
+	Not yet implemented
+
+
+Parser
+	The newest version of the parser allows you to type things like :
+		> go south
+		> south south south south
+		> leave nw
+		> get all
+		> look
+		> look at <object>
+		> examine <object>
+		> drop <object>
+		> drop all
+		> inventory
+		> sit down
+		> put a coin in the wallet drop wallet
+		> take the coin from the billfold
+
+	And will allow you (in the near future) to type things like :
+		> go west then get all but the rock 
+		> get (if there is only one object in the room)
+
+
+Moves
+	The game keeps track of the number of legal moves you make and 
+	bases your final rank on moves and score. 
+	
+	Each legal move (except looking at your watch) moves the games
+	clock ahead 5 minutes.  Certain things like the sun and moon, the
+	bus, and the vortex are based upon the time.
+
+Sun and Moon
+	Soon to be implemented is a different room description depending
+	upon whether it is day or night.
+
+	Right now, if you are outside, you can see the sun or moon.

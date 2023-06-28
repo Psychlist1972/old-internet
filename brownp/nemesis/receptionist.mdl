@@ -1,0 +1,130 @@
+! RECEPTIONIST.MDL For receptionist of medium hotel
+
+- LABEL enter()
+- LABEL leave()
+- LABEL say(if(include(speech,"Give room"),GOSUB room()),
+	    if(include(speech,"Give key"),GOSUB key()),
+	    if(include(speech,"Withdraw"),GOSUB withdraw()),
+	    if(include(speech,"Hello"),GOSUB hello()))
+- LABEL attack()
+- LABEL look()
+- LABEL look you()
+- LABEL command(DEFINE lowcase(prog(SET lowcase(strip(command)),
+	if(=(command,"rape"), GOSUB rape(command,lowcase),
+	if(=(command,"love"), GOSUB rape(command,lowcase),
+	if(=(command,"fuck"), GOSUB rape(command,lowcase),
+	if(=(command,"kiss"), GOSUB kiss(command,lowcase),
+	if(=(command,"smile"), GOSUB smile(command,lowcase),
+	if(=(command,"status"), GOSUB status(command,lowcase),
+	if(=(command,"restart"), GOSUB restart(command,lowcase),
+	pprint("You can't ",command," receptionist.")
+))))))))))
+	
+- LABEL Action(
+	pprint raw("You ",p1," ",p2),
+	oprint raw(print null(player name)," ",p1,"s ",p2)
+	)
+
+- LABEL No Action(
+	pprint raw("You can't ",p1," ",p2),
+	oprint(player name," can't ",p1," ",p2)
+	)
+
+- LABEL rape(GOSUB Action(
+	"grab","receptionist in your arms, trying make love."),
+	print("Receptionist shouts: RAPE !"),
+	pprint("Guard appears and shouts you."),
+	oprint("Guard appears and shouts",player name,"."),
+	attack("40")
+	)	
+
+- LABEL Score(set experience(plus(experience(player name),p1)))
+
+- LABEL kiss(pprint("You kiss the receptionist."),
+	oprint(player name,"kisses the receptionst."),
+	GOSUB Score(random("0, 0, 0, 0, 0, 0, 1, 1, 2")),
+	print("Receptionist smiles.")
+	)
+
+- LABEL smile(GOSUB Action(
+	"smile","at receptionist."))
+
+- LABEL status(pprint("Receptionist's status: ",get state()))
+
+- LABEL Manager(and(player name,get remote state("R2D2")))
+
+- LABEL restart(if(GOSUB Manager(),GOSUB Restart(),
+	GOSUB No Action("restart","receptionist.")))
+
+- LABEL Restart(GOSUB Action("restart","receptionist."),
+	set state(""),
+	FOR i("-1-, -2-, -3-, -4-",GOSUB Get(i)),
+	move("reception"))
+
+- LABEL Get(move(+("Room ",p1)),
+	    if(get(+("Key ",p1)),pprint("Succeed: ",p1)))
+	
+- LABEL Free(not(include(get state(),+("Key ",p1," /"))))
+
+- LABEL In player(and(get state(),+("Key ",p1," / ",player name)))
+
+- LABEL Locate(random(FOR i("-1-, -2-, -3-, -4-",GOSUB Free(i))))
+
+- LABEL Locate2(random(FOR i("-1-, -2-, -3-, -4-",GOSUB In player(i))))
+
+- LABEL room(DEFINE room(if(SET room(GOSUB Locate2()),
+	pprint("Receptionist: You already have room ",room,"."),
+	if(SET room(GOSUB Locate()),
+	   if(GOSUB rent(),GOSUB Give(room,"hire")),
+	   print("Receptionist: No rooms left.")))))
+
+- LABEL Give(if(pduplicate(destroy(+("Key ",p1))),
+		null(set state(or(get state(),
+			+("Key ",p1," /",player name))),
+			if(p2,null(GOSUB Action("hire",+("room ",p1,".")),
+			           GOSUB Score("2"))),
+			pprint("Receptionist gives Key ",p1," to you."))))
+
+- LABEL key(DEFINE room(
+	if(SET room(GOSUB Locate2()),
+	   GOSUB Give(room,""),
+	   print("Receptionist: You haven't room."))))
+            
+- LABEL withdraw(DEFINE room(
+	if(SET room(GOSUB Locate2()),
+	GOSUB Withdraw(room),
+	print("Receptionist: You haven't room."))))
+            
+- LABEL Withdraw(duplicate(pdestroy(+("Key ",p1))),
+		set state(exclude(get state(),
+			+("Key ",p1," /",player name))),
+		GOSUB Action("withdraw",+("room ",p1,".")),
+		GOSUB Score("10"),
+		move(+("Room ",p1)),
+		get(+("Key ",p1)),
+		move("Reception"))
+
+-LABEL hello(DEFINE i(if(GOSUB Locate(),
+		         if(SET i(GOSUB Locate2()),
+		            if(and(inv(),+("key ",i)),
+	                       print("Receptionist: Hello! Want your key?"),
+			       print("Receptionist: Hello!")),
+		            print("Receptionist: Hello! Want your room?")),
+		         print("Receptionist: Hello!"))))
+
+- LABEL money("gold coin, gold sack")
+
+- LABEL sel money(random(and(GOSUB money(),pinv ())))
+
+- LABEL rent(DEFINE money(if(SET money(GOSUB sel money()),
+			  prog(pprint("Receptionist takes ",money," as rent."),
+			       pdestroy(money),
+			       move("hotel's wareroom"),
+			       duplicate(money),
+			       drop(money),
+			       move("reception"),
+			       money),
+			  prog(print("Receptionist: You mast have something as rent."),
+			       print("Receptionist: Maybe ",
+			             random(GOSUB money())),
+			       ""))))

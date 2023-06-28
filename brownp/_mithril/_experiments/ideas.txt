@@ -1,0 +1,48 @@
+
+
+Sentence matrix :
+
+1. Noun only
+	[ What do you wish to to with the "noun" ? ]
+
+
+2. Verb without a noun
+
+	"Take."
+
+	if the verb can be used alonr then perform the action
+	if the verb can be used either alone or with other words then perform
+	if the verb cannot be used alone then:
+ 		[ Not enough nouns in that sentence. ]
+	if the verb cannot be used alone, but there is only one thing which
+	it can refer to, then assume that that object is the one in question.
+
+	example:
+	
+		I want to > Take.
+		(I assume you mean the red box. )
+		Taken.
+
+
+3. verb with an adjective and a noun
+
+	"Get the big cat."
+
+	if adjective is in the nouns list of usable adjectives, then
+	perform the action.
+    else
+	[ You see no "adjective noun" here. ]
+
+
+4. verb with multiple nouns
+
+	"Get the cat, dog and bird."
+
+	Check to see if the verb can refer to multiple objects
+	if so, them
+		Check to see if all objects are in the room. and if they
+		are, perform the actions on the objects, otherwise, print
+		the [You see no "noun" here..] description. 
+	else
+		[ You cannot refer to multple objects with "verb". ]
+

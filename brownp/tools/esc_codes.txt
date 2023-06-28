@@ -1,0 +1,14 @@
+<ESC>[0m   (DEFAULT       -NORMAL
+<ESC>[1m                  -BOLD
+<ESC>[4m                  -UNDERLINE
+<ESC>[5m                  -BLINKING
+<ESC>[7m                  -REVERSE
+<ESC>#3                   -DOUBLE HEIGHT(TOP HALF)
+<ESC>#4                   -DOUBLE HEIGHT(BOTTOM HALF)
+<ESC>#5                   -SINGLE WIDTH(DEFAULT)
+<ESC>#6                   -WRITES DOUBLE WIDTH
+<ESC>7                    -SAVE COLUMN POSITION
+<ESC>8                    -RESTORE COLUMN POSITION
+
+<ESC>[X;Y h               -CURSOR POSITION
+<ESC>[X;Y r		  -define scrolling region (1-24) (x=top)(y=bottom)

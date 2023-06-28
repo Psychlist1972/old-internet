@@ -1,0 +1,22 @@
+Revised 9/24/91
+
+If you wish to post something useful or humorous in this directory, just
+mail WOODS::BROWNP wit a request. If it is acceptable, I will post the file 
+(space permitting) in my [.public] directory.
+
+   *********************************************************************
+   * Have Fun, please mail any bugs or communications to WOODS::BROWNP *
+   *********************************************************************
+
+A new file called _CONVERT.COM which I have written has just been added to my
+account.  It will enable you to convert any text file to either a .COM or a
+.PAS file using WRITE SYS$OUTPUT "..." and WRITELN('...'); respectively.
+
+Look for these games on the GAMES account written by me, The Psychlist :
+
+		Nemesis, Breakout, Pong
+
+Everyone try George Cercone's new VAX personal page.  Just type PERSONAL
+after running my _LOGIN.COM
+
+Peter M Brown

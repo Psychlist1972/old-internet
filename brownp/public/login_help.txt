@@ -1,0 +1,56 @@
+
+
++-----------------------------------------------------------------------------+
+|        NEW COMMANDS DEFINED BY science$disk:[brownp.public]_login.com       |
++-----------------------------------------------------------------------------+
+
+                     parameters are shown in  <these>
+                     optional parameters are shown in [these]     
+
+
+Cmd	Parameters/functions
+-----------------------------------------------------
+
+CD      [< .. or directory name >]
+MOVE    (used to move a file between directories)
+ALARM   <alarm_time> <FLASH, BEEP or BOTH>
+CLOCK   (runs JCLOCK) Clock display on top right corner
+GRON    (Turns Grafix mode ON)
+GROFF   (Turns Grafix mode OFF)
+MORE    type/page
+PAGE    type/page
+PAUSE   (Pause the terminal)
+RE1     [<filename>] (Purge and rename all to ;1)
+TRASH   <filename> (DELETE/CONFIRM, sets protection of the file so YOU CAN 
+		delete it, also unlocks the file if locked)
+JITTER  (Really annoying come file, try it)
+BONER   (Very sick program...not really for the ladies)
+SEND    <username> <number of copies> <filename>
+CONVERT convert from TEXT to PASCAL or TEXT to COM_FILE
+MAIL    new mail editor, use CTRL-Z and then EXIT to send mail
+                             CTRL-Z and then QUIT to abort sending mail
+WHO     [<username>]     (show users/full with page breaks)
+SU      [<username>]     (show users/full with NO page breaks)
+PDIR    (dir/brief with page breaks)
+LS	directory/size/owner/protect
+TIME    (show time)
+ELOG    EDIT LOGIN.COM
+ALOG    @LOGIN.COM
+NBR     set term/nobroadcast
+BRO     set term/broadcast
+ECHON   set term/echo
+ECHOFF  set term/noecho
+DRAW    the VAX graphics mode drawing utility.
+OLEARY  print/queue = OLEARY
+OS101   print/queue = os101
+OS101A  print/queue = os101A
+OS101B  print/queue = os101B
+
+PUBLIC get into my Public diretory
+
+Also sets the terminal to VT100 and to INSERT MODE.
+
+
+     * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * 
+    * * * * * *         ANY PROBLEMS EMAIL BROWNP!!         * * * * * * 
+     * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * 
